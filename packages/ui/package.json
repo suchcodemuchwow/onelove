@@ -10,7 +10,7 @@
     "@radix-ui/react-slot": "^1.0.2",
     "class-variance-authority": "^0.6.0",
     "clsx": "^1.2.1",
-    "lucide-react": "^0.244.0",
+    "lucide-react": "^0.299.0",
     "tailwind-merge": "^1.13.2",
     "tailwindcss-animate": "^1.0.6"
   },
