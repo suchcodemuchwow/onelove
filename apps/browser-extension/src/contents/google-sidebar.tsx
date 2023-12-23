@@ -1,5 +1,5 @@
 import cssText from "data-text:./google-sidebar.css";
-import shadcnCssText from "data-text:../../../../packages/ui/styles/globals.css";
+import shadcnCssText from "data-text:../globals.css";
 import type { PlasmoCSConfig } from "plasmo";
 import { useEffect, useState } from "react";
 // Inject to the webpage itself
