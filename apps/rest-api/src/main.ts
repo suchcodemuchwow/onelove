@@ -22,7 +22,7 @@ async function bootstrap() {
     const swaggerConfig = new DocumentBuilder()
       .addServer(apiBaseUrl)
       .setTitle(`Accounting API`)
-      .setVersion("3.1.0")
+      .setVersion("0.0.1")
       .build();
 
     const document = SwaggerModule.createDocument(app, swaggerConfig);
