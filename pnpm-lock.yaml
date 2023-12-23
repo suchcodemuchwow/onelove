@@ -183,7 +183,7 @@ importers:
     dependencies:
       '@radix-ui/react-slot':
         specifier: ^1.0.2
-        version: 1.0.2(@types/react@18.2.45)(react@17.0.2)
+        version: 1.0.2(@types/react@18.2.45)(react@18.2.0)
       class-variance-authority:
         specifier: ^0.7.0
         version: 0.7.0
@@ -192,7 +192,7 @@ importers:
         version: 2.0.0
       lucide-react:
         specifier: ^0.300.0
-        version: 0.300.0(react@17.0.2)
+        version: 0.300.0(react@18.2.0)
       tailwind-merge:
         specifier: ^2.0.0
         version: 2.2.0
@@ -225,8 +225,8 @@ importers:
         specifier: ^8.4.24
         version: 8.4.32
       react:
-        specifier: ^17.0.2
-        version: 17.0.2
+        specifier: ^18.0.0
+        version: 18.2.0
       tailwindcss:
         specifier: ^3.3.2
         version: 3.4.0
@@ -1397,7 +1397,7 @@ packages:
       tslib: 2.6.2
     dev: true
 
-  /@radix-ui/react-compose-refs@1.0.1(@types/react@18.2.45)(react@17.0.2):
+  /@radix-ui/react-compose-refs@1.0.1(@types/react@18.2.45)(react@18.2.0):
     resolution: {integrity: sha512-fDSBgd44FKHa1FRMU59qBMPFcl2PZE+2nmqunj+BWFyYYjnhIDWL2ItDs3rrbJDQOtzt5nIebLCQc4QRfz6LJw==}
     peerDependencies:
       '@types/react': '*'
@@ -1408,10 +1408,10 @@ packages:
     dependencies:
       '@babel/runtime': 7.23.6
       '@types/react': 18.2.45
-      react: 17.0.2
+      react: 18.2.0
     dev: false
 
-  /@radix-ui/react-slot@1.0.2(@types/react@18.2.45)(react@17.0.2):
+  /@radix-ui/react-slot@1.0.2(@types/react@18.2.45)(react@18.2.0):
     resolution: {integrity: sha512-YeTpuq4deV+6DusvVUW4ivBgnkHwECUu0BiN43L5UCDFgdhsRUWAghhTF5MbvNTPzmiFOx90asDSUjWuCNapwg==}
     peerDependencies:
       '@types/react': '*'
@@ -1421,9 +1421,9 @@ packages:
         optional: true
     dependencies:
       '@babel/runtime': 7.23.6
-      '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.2.45)(react@17.0.2)
+      '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.2.45)(react@18.2.0)
       '@types/react': 18.2.45
-      react: 17.0.2
+      react: 18.2.0
     dev: false
 
   /@rushstack/eslint-patch@1.6.1:
@@ -5269,12 +5269,12 @@ packages:
     dependencies:
       yallist: 4.0.0
 
-  /lucide-react@0.300.0(react@17.0.2):
+  /lucide-react@0.300.0(react@18.2.0):
     resolution: {integrity: sha512-rQxUUCmWAvNLoAsMZ5j04b2+OJv6UuNLYMY7VK0eVlm4aTwUEjEEHc09/DipkNIlhXUSDn2xoyIzVT0uh7dRsg==}
     peerDependencies:
       react: ^16.5.1 || ^17.0.0 || ^18.0.0
     dependencies:
-      react: 17.0.2
+      react: 18.2.0
     dev: false
 
   /macos-release@2.5.1:
@@ -6038,19 +6038,11 @@ packages:
     resolution: {integrity: sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==}
     dev: true
 
-  /react@17.0.2:
-    resolution: {integrity: sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA==}
-    engines: {node: '>=0.10.0'}
-    dependencies:
-      loose-envify: 1.4.0
-      object-assign: 4.1.1
-
   /react@18.2.0:
     resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==}
     engines: {node: '>=0.10.0'}
     dependencies:
       loose-envify: 1.4.0
-    dev: false
 
   /read-cache@1.0.0:
     resolution: {integrity: sha512-Owdv/Ft7IjOgm/i0xvNDZ1LrRANRfew4b2prF3OWMQLxLfu3bS8FVhCsrSCMK4lR56Y9ya+AThoTpDCTxCmpRA==}
