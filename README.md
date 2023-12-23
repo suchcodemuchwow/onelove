@@ -53,3 +53,14 @@ This Turborepo has some additional tools already setup for you:
 - [ESLint](https://eslint.org/) for code linting
 - [Prettier](https://prettier.io) for code formatting
 - [Renovate](https://docs.renovatebot.com) for dependency updates
+
+## Roadmap
+
+- [ ] Plasmo app
+- [ ] Mobile app
+- [ ] Desktop app
+- [ ] Scraper
+- [ ] Supabase
+- [ ] Vercel one click deploy
+- [ ] Github workflows
+- [ ] Docker
