@@ -18,7 +18,7 @@
     "react-router-dom": "^6.10.0"
   },
   "devDependencies": {
-    "@plasmohq/prettier-plugin-sort-imports": "3.6.4",
+    "@plasmohq/prettier-plugin-sort-imports": "4.0.1",
     "@types/chrome": "0.0.254",
     "@types/eslint": "^8.44.7",
     "@types/node": "20.10.5",
