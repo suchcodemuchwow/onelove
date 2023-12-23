@@ -1,7 +1,7 @@
 #sidebar {
   position: absolute;
 
-  background-color: #1b141d;
+  background-color: green;
   width: var(--plasmo-google-sidebar-width);
   height: 100vh;
 
