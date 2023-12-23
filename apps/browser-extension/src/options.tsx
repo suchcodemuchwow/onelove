@@ -1,9 +1,6 @@
 import "./globals.css";
-import { useState } from "react";
 
 function IndexOptions() {
-  const [data, setData] = useState("");
-
   return (
     <div id="root">
       <h1>
