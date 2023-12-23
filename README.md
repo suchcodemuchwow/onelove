@@ -30,7 +30,7 @@ turbo run dev
 
 This Turborepo includes the following packages/apps:
 
-### Apps and Packages
+#### Apps
 
 - `frontend`: a [Next.js](https://nextjs.org/) app
 - `rest-api`: a [Nest.js](https://nestjs.com/) api
@@ -38,8 +38,11 @@ This Turborepo includes the following packages/apps:
 - `browser-extension`: a [Plasmo](https://www.plasmo.com/) extension
 - `desktop-app`: an [Electron](http://electron.atom.io/) app
 - `scraper`: a [Playwright](https://playwright.dev/) app
-- `@repo/ui`: a [Shadcn](https://ui.shadcn.com/) React component library
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
+
+#### Packages
+
+- `@repo/ui`: [Shadcn](https://ui.shadcn.com/) ui library
+- `@repo/eslint-config`: `eslint` configurations
 - `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
 
 ### Utilities
