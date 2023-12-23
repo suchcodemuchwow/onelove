@@ -1,6 +1,6 @@
 # onelove 🫶
 
-[![One Love](https://www.youtube.com/watch?v=vdB-8eLEW8g)](http://www.youtube.com/watch?v=vdB-8eLEW8g "One Love")
+<img src="https://media.giphy.com/media/YlYzh2nwfndCxSiuXq/giphy.gif" width="240" height="200"/>
 
 ## Motivation
 
