@@ -1,10 +1,19 @@
-import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
+import { Module } from "@nestjs/common";
+import { ConfigModule } from "@nestjs/config";
+import { PingModule } from "./ping/ping.module";
+import { TransactionsModule } from "./transactions/transactions.module";
+import { AccountsModule } from "./accounts/accounts.module";
+import { CacheModule } from "@nestjs/cache-manager";
 
 @Module({
-  imports: [],
-  controllers: [AppController],
-  providers: [AppService],
+  imports: [
+    ConfigModule.forRoot({ isGlobal: true }),
+    CacheModule.register({ isGlobal: true, ttl: 60 * 60 * 24 }),
+    PingModule,
+    TransactionsModule,
+    AccountsModule,
+  ],
+  controllers: [],
+  providers: [],
 })
 export class AppModule {}
