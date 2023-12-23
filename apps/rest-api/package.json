@@ -41,7 +41,7 @@
     "@nestjs/platform-express": "^10.0.0",
     "@nestjs/cache-manager": "2.1.1",
     "cache-manager": "^3.0.2",
-    "reflect-metadata": "^0.1.12",
+    "reflect-metadata": "^0.2.0",
     "rxjs": "^7.8.1"
   },
   "devDependencies": {
