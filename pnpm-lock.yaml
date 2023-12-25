@@ -83,8 +83,8 @@ importers:
         specifier: ^8.53.0
         version: 8.56.0
       lucide-react:
-        specifier: ^0.301.0
-        version: 0.301.0(react@18.2.0)
+        specifier: ^0.302.0
+        version: 0.302.0(react@18.2.0)
       postcss:
         specifier: ^8.4.24
         version: 8.4.32
@@ -307,8 +307,8 @@ importers:
         specifier: ^3.0.6
         version: 3.0.6
       lucide-react:
-        specifier: ^0.301.0
-        version: 0.301.0(react@18.2.0)
+        specifier: ^0.302.0
+        version: 0.302.0(react@18.2.0)
       react:
         specifier: ^18.2.0
         version: 18.2.0
@@ -12678,8 +12678,8 @@ packages:
     dependencies:
       yallist: 4.0.0
 
-  /lucide-react@0.301.0(react@18.2.0):
-    resolution: {integrity: sha512-ZMbsXSv8qg3u0wqGngW+dG2Tu20fBqQAu3e0MikjGIx6KUN+4TrL2j3XwWZCcpHEfH9Tw+gqnQXRhHVne5DzJQ==}
+  /lucide-react@0.302.0(react@18.2.0):
+    resolution: {integrity: sha512-JZX+1fjpqxvQmEgItvPOAwRlqf0Eg9dSZMxljA2/V2M6dluOhQCPBhewIlSJWgkNu0M36kViOgmTAMnDaAMOFw==}
     peerDependencies:
       react: ^16.5.1 || ^17.0.0 || ^18.0.0
     dependencies:
