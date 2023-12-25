@@ -6,10 +6,15 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "turbo build",
     "dev": "turbo dev",
-    "format": "prettier --config .prettierrc --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "lint": "turbo lint"
+    "dev:mobile": "turbo dev --filter=\"{./apps/mobile}...\"",
+    "dev:web": "turbo dev --filter=\"{./apps/web}...\"",
+    "lint": "turbo lint",
+    "test": "turbo test",
+    "build": "turbo build",
+    "build:mobile": "turbo build --filter=\"...{./apps/mobile}\"",
+    "build:web": "turbo build --filter=\"...{./apps/web}\"",
+    "format": "prettier --config .prettierrc --write \"**/*.{js,jsx,ts,tsx,json,md}\""
   },
   "dependencies": {
     "@nestjs/cache-manager": "^2.1.1",
