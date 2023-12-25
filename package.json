@@ -27,5 +27,14 @@
   "packageManager": "pnpm@8.12.1",
   "engines": {
     "node": ">=18"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "@babel/*",
+        "expo-modules-*",
+        "typescript"
+      ]
+    }
   }
 }

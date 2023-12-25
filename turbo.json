@@ -4,7 +4,12 @@
   "pipeline": {
     "build": {
       "dependsOn": ["^build"],
-      "outputs": [".next/**", "!.next/cache/**"]
+      "outputs": [
+        ".next/**",
+        "!.next/cache/**",
+        "build/**",
+        "node_modules/.cache/metro/**"
+      ]
     },
     "lint": {
       "dependsOn": ["^lint"]
