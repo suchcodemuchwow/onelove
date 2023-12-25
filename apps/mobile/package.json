@@ -26,8 +26,8 @@
   "devDependencies": {
     "@babel/core": "^7.19.3",
     "@repo/eslint-config": "workspace:*",
-    "@types/react": "18.2.43",
-    "@types/react-dom": "18.0.10",
+    "@types/react": "18.2.45",
+    "@types/react-dom": "18.2.18",
     "babel-preset-expo": "9.5.0"
   }
 }
