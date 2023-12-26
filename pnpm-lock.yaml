@@ -7,22 +7,6 @@ settings:
 importers:
 
   .:
-    dependencies:
-      '@nestjs/cache-manager':
-        specifier: ^2.1.1
-        version: 2.1.1(@nestjs/common@10.3.0)(@nestjs/core@10.3.0)(cache-manager@3.6.3)(reflect-metadata@0.1.14)(rxjs@7.8.1)
-      '@nestjs/config':
-        specifier: ^3.1.1
-        version: 3.1.1(@nestjs/common@10.3.0)(reflect-metadata@0.1.14)
-      '@nestjs/swagger':
-        specifier: ^7.1.17
-        version: 7.1.17(@nestjs/common@10.3.0)(@nestjs/core@10.3.0)(class-transformer@0.5.1)(class-validator@0.14.0)(reflect-metadata@0.1.14)
-      class-transformer:
-        specifier: ^0.5.1
-        version: 0.5.1
-      class-validator:
-        specifier: ^0.14.0
-        version: 0.14.0
     devDependencies:
       '@repo/eslint-config':
         specifier: workspace:*
@@ -30,12 +14,18 @@ importers:
       '@repo/typescript-config':
         specifier: workspace:*
         version: link:packages/typescript-config
+      eslint:
+        specifier: 8.56.0
+        version: 8.56.0
       prettier:
         specifier: ^3.1.1
         version: 3.1.1
       turbo:
         specifier: latest
         version: 1.11.2
+      typescript:
+        specifier: 5.3.3
+        version: 5.3.3
 
   apps/browser-extension:
     dependencies:
@@ -45,6 +35,9 @@ importers:
       '@repo/ui':
         specifier: workspace:*
         version: link:../../packages/ui
+      lucide-react:
+        specifier: ^0.301.0
+        version: 0.301.0(react@18.2.0)
       plasmo:
         specifier: 0.84.0
         version: 0.84.0(postcss@8.4.32)(react-dom@18.2.0)(react@18.2.0)
@@ -79,12 +72,6 @@ importers:
       autoprefixer:
         specifier: ^10.4.14
         version: 10.4.16(postcss@8.4.32)
-      eslint:
-        specifier: ^8.53.0
-        version: 8.56.0
-      lucide-react:
-        specifier: ^0.301.0
-        version: 0.301.0(react@18.2.0)
       postcss:
         specifier: ^8.4.24
         version: 8.4.32
@@ -97,9 +84,6 @@ importers:
       tailwindcss-animate:
         specifier: ^1.0.6
         version: 1.0.7(tailwindcss@3.4.0)
-      typescript:
-        specifier: 5.3.3
-        version: 5.3.3
 
   apps/desktop-app:
     dependencies:
@@ -123,7 +107,7 @@ importers:
         specifier: ^6.6.0
         version: 6.15.0(eslint@8.56.0)(typescript@5.3.3)
       '@vitejs/plugin-react':
-        specifier: ^4.0.4
+        specifier: ^4.2.1
         version: 4.2.1(vite@4.5.1)
       electron:
         specifier: ^26.1.0
@@ -131,18 +115,12 @@ importers:
       electron-builder:
         specifier: ^24.6.4
         version: 24.9.1
-      eslint:
-        specifier: ^8.48.0
-        version: 8.56.0
       eslint-plugin-react-hooks:
         specifier: ^4.6.0
         version: 4.6.0(eslint@8.56.0)
       eslint-plugin-react-refresh:
         specifier: ^0.4.3
         version: 0.4.5(eslint@8.56.0)
-      typescript:
-        specifier: ^5.2.2
-        version: 5.3.3
       vite:
         specifier: ^4.4.9
         version: 4.5.1
@@ -247,15 +225,27 @@ importers:
       '@nestjs/common':
         specifier: ^10.0.0
         version: 10.3.0(class-transformer@0.5.1)(class-validator@0.14.0)(reflect-metadata@0.1.14)(rxjs@7.8.1)
+      '@nestjs/config':
+        specifier: ^3.1.1
+        version: 3.1.1(@nestjs/common@10.3.0)(reflect-metadata@0.1.14)
       '@nestjs/core':
         specifier: ^10.0.0
         version: 10.3.0(@nestjs/common@10.3.0)(@nestjs/platform-express@10.3.0)(reflect-metadata@0.1.14)(rxjs@7.8.1)
       '@nestjs/platform-express':
         specifier: ^10.0.0
         version: 10.3.0(@nestjs/common@10.3.0)(@nestjs/core@10.3.0)
+      '@nestjs/swagger':
+        specifier: ^7.1.17
+        version: 7.1.17(@nestjs/common@10.3.0)(@nestjs/core@10.3.0)(class-transformer@0.5.1)(class-validator@0.14.0)(reflect-metadata@0.1.14)
       cache-manager:
         specifier: ^3.0.2
         version: 3.6.3
+      class-transformer:
+        specifier: ^0.5.1
+        version: 0.5.1
+      class-validator:
+        specifier: ^0.14.0
+        version: 0.14.0
       reflect-metadata:
         specifier: ^0.1.12
         version: 0.1.14
@@ -14341,6 +14331,7 @@ packages:
       react: ^16.5.1 || ^17.0.0 || ^18.0.0
     dependencies:
       react: 18.2.0
+    dev: false
 
   /macos-release@2.5.1:
     resolution: {integrity: sha512-DXqXhEM7gW59OjZO8NIjBCz9AQ1BEMrfiOAl4AYByHCtVHRF4KoGNO8mqQeM8lRCtQe/UnJ4imO/d2HdkKsd+A==}
@@ -16486,6 +16477,7 @@ packages:
     engines: {node: '>=0.10.0'}
     dependencies:
       loose-envify: 1.4.0
+    dev: false
 
   /read-cache@1.0.0:
     resolution: {integrity: sha512-Owdv/Ft7IjOgm/i0xvNDZ1LrRANRfew4b2prF3OWMQLxLfu3bS8FVhCsrSCMK4lR56Y9ya+AThoTpDCTxCmpRA==}

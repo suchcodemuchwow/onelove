@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "license": "MIT",
   "scripts": {
+    "clean": "rm -rf node_modules build",
     "lint": "eslint .",
     "ui:add": "npx shadcn-ui@latest add"
   },
@@ -15,8 +16,8 @@
     "date-fns": "^3.0.6",
     "lucide-react": "^0.301.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
     "react-day-picker": "^8.9.1",
+    "react-dom": "^18.2.0",
     "tailwind-merge": "^2.0.0",
     "tailwindcss-animate": "^1.0.6"
   },

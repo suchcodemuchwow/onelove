@@ -4,6 +4,7 @@
   "license": "MIT",
   "scripts": {
     "build": "plasmo build",
+    "clean": "rm -rf node_modules build .plasmo .turbo",
     "dev": "plasmo dev",
     "lint": "eslint . --max-warnings 0",
     "package": "plasmo package",
@@ -12,6 +13,7 @@
   "dependencies": {
     "@plasmohq/messaging": "^0.6.0",
     "@repo/ui": "workspace:*",
+    "lucide-react": "^0.301.0",
     "plasmo": "0.84.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -25,13 +27,10 @@
     "@types/react": "18.2.45",
     "@types/react-dom": "18.2.18",
     "autoprefixer": "^10.4.14",
-    "eslint": "^8.53.0",
-    "lucide-react": "^0.301.0",
     "postcss": "^8.4.24",
     "tailwind-merge": "^2.0.0",
     "tailwindcss": "^3.3.2",
-    "tailwindcss-animate": "^1.0.6",
-    "typescript": "5.3.3"
+    "tailwindcss-animate": "^1.0.6"
   },
   "manifest": {
     "host_permissions": [

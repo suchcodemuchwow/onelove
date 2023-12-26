@@ -1,33 +1,25 @@
 {
   "name": "onelove",
   "private": true,
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
   "scripts": {
-    "dev": "turbo dev",
-    "dev:mobile": "turbo dev --filter=\"{./apps/mobile}...\"",
-    "dev:web": "turbo dev --filter=\"{./apps/web}...\"",
-    "lint": "turbo lint",
-    "test": "turbo test",
     "build": "turbo build",
     "build:mobile": "turbo build --filter=\"...{./apps/mobile}\"",
     "build:web": "turbo build --filter=\"...{./apps/web}\"",
-    "format": "prettier --config .prettierrc --write \"**/*.{js,jsx,ts,tsx,json,md}\""
-  },
-  "dependencies": {
-    "@nestjs/cache-manager": "^2.1.1",
-    "@nestjs/config": "^3.1.1",
-    "@nestjs/swagger": "^7.1.17",
-    "class-transformer": "^0.5.1",
-    "class-validator": "^0.14.0"
+    "clean": "pnpm store prune && turbo clean",
+    "dev": "turbo dev",
+    "dev:mobile": "turbo dev --filter=\"{./apps/mobile}...\"",
+    "dev:web": "turbo dev --filter=\"{./apps/web}...\"",
+    "format": "prettier --config .prettierrc --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "lint": "turbo lint",
+    "test": "turbo test"
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
+    "eslint": "8.56.0",
     "prettier": "^3.1.1",
-    "turbo": "latest"
+    "turbo": "latest",
+    "typescript": "5.3.3"
   },
   "packageManager": "pnpm@8.12.1",
   "engines": {

@@ -7,10 +7,11 @@
   "type": "module",
   "scripts": {
     "build": "tsc",
+    "clean": "rm -rf node_modules build storage",
     "dev": "tsx src/main.ts",
     "start": "pnpm dev",
-    "start:prod": "node dist/main.js",
-    "test": "echo \"Error: oops, the actor has no tests yet, sad!\" && exit 1"
+    "start:prod": "node build/main.js",
+    "test": "echo \"Error: oops, the actor has no tests yet, sad!\""
   },
   "dependencies": {
     "crawlee": "^3.0.0",

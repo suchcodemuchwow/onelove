@@ -22,7 +22,7 @@ RUN npm run build
 FROM apify/actor-node-playwright-chrome:18
 
 # Copy only built JS files from builder image
-COPY --from=builder --chown=myuser /home/myuser/dist ./dist
+COPY --from=builder --chown=myuser /home/myuser/build ./build
 
 # Copy just package.json and package-lock.json
 # to speed up the build using Docker layer cache.

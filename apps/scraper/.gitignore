@@ -1,7 +1,7 @@
 # This file tells Git which files shouldn't be added to source control
 
 .idea
-dist
+build
 node_modules
 apify_storage
 crawlee_storage

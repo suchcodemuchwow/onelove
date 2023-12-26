@@ -7,7 +7,7 @@ export default function NewTab() {
 
   return (
     <div id="root">
-      Batu
+      Baturalpppp
       <Calendar
         mode="single"
         selected={date}

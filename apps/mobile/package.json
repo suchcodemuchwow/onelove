@@ -6,6 +6,7 @@
   "scripts": {
     "android": "expo start --android",
     "build": "expo export --output-dir ./build --platform all",
+    "clean": "rm -rf node_modules .turbo",
     "dev": "expo start -i -g",
     "eas-build-post-install": "pnpm run -w build:mobile",
     "ios": "expo start --ios",

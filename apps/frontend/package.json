@@ -2,10 +2,12 @@
   "name": "frontend",
   "version": "0.0.1",
   "scripts": {
-    "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "eslint . --max-warnings 0"
+    "clean": "rm -rf node_modules .turbo .next",
+    "dev": "next dev -p 3000 & $npm_execpath open-browser",
+    "lint": "eslint . --max-warnings 0",
+    "open-browser": "open http://0.0.0.0:3000",
+    "start": "next start"
   },
   "dependencies": {
     "@repo/ui": "workspace:*",
