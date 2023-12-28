@@ -1,1 +1,0 @@
-ignores: ["autoprefixer","tailwindcss","postcss","@typescript-eslint/parser","eslint-plugin-only-warn","eslint-config-prettier","eslint-config-turbo","eslint-import-resolver-typescript"]

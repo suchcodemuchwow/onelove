@@ -7,10 +7,7 @@ node_modules
 
 # Local env files
 .env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+.env*.local
 
 # Testing
 coverage
@@ -24,16 +21,50 @@ coverage
 # Build Outputs
 .next/
 out/
-build
 dist
 .plasmo
-
+next-env.d.ts
 
 # Debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.pnpm-debug.log*
+lerna-debug.log*
 
 # Misc
 .DS_Store
 *.pem
+
+# IDE
+.idea
+.vscode
+!.vscode/extensions.json
+
+# Storage
+apify_storage
+crawlee_storage
+storage
+
+# Expo
+.expo/
+dist/
+expo-env.d.ts
+apps/expo/.gitignore
+
+# Production
+build
+
+# TypeScript
+*.tsbuildinfo
+
+# Logs
+logs
+*.log
+
+# Editor directories and files
+.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

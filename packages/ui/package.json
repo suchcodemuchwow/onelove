@@ -1,11 +1,20 @@
 {
-  "name": "@repo/ui",
+  "name": "@acme/ui",
   "version": "0.0.1",
   "license": "MIT",
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "exports": {
+    ".": "./components/index.tsx",
+    "./shadcn-tailwind-config": "./tailwind.config.js",
+    "./shadcn.css": "./dist/index.css"
+  },
   "scripts": {
+    "build": "tailwindcss -i ./styles/globals.css -o dist/index.css",
     "clean": "rm -rf node_modules build",
-    "lint": "eslint .",
-    "ui:add": "npx shadcn-ui@latest add"
+    "lint": "eslint . --max-warnings 0",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@radix-ui/react-checkbox": "^1.0.4",
@@ -18,19 +27,39 @@
     "react": "^18.2.0",
     "react-day-picker": "^8.9.1",
     "react-dom": "^18.2.0",
-    "tailwind-merge": "^2.0.0",
-    "tailwindcss-animate": "^1.0.6"
+    "tailwind-merge": "^2.2.0"
   },
   "devDependencies": {
-    "@repo/eslint-config": "workspace:*",
-    "@repo/typescript-config": "workspace:*",
+    "@acme/eslint-config": "workspace:*",
+    "@acme/prettier-config": "workspace:*",
+    "@acme/tsconfig": "workspace:*",
     "@types/node": "^20.0.0",
     "@types/react": "^18.2.37",
     "@types/react-dom": "^18.2.15",
-    "autoprefixer": "^10.4.14",
-    "eslint": "^8.0.0",
-    "postcss": "^8.4.24",
-    "tailwindcss": "^3.3.2",
-    "typescript": "^5.0.0"
-  }
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.5",
+    "tailwindcss-animate": "^1.0.7",
+    "tsup": "^8.0.1"
+  },
+  "eslintConfig": {
+    "env": {
+      "amd": true,
+      "browser": true,
+      "node": true
+    },
+    "extends": [
+      "@acme/eslint-config/base",
+      "@acme/eslint-config/react"
+    ],
+    "rules": {
+      "@typescript-eslint/no-empty-interface": "off",
+      "@typescript-eslint/no-unsafe-assignment": "off",
+      "react/jsx-key": "off",
+      "react/no-unknown-property": "off",
+      "@next/next/no-html-link-for-pages": "off"
+    },
+    "root": true
+  },
+  "prettier": "@acme/prettier-config"
 }

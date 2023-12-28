@@ -1,12 +1,21 @@
 {
   "$schema": "https://turbo.build/schema.json",
   "globalDependencies": [
-    "**/.env.*local"
+    "**/.env"
   ],
   "globalEnv": [
     "PLASMO_PUBLIC_DEV_PORT"
   ],
   "pipeline": {
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "frontend#dev": {
+      "dependsOn": [
+        "@acme/ui#build"
+      ]
+    },
     "build": {
       "dependsOn": [
         "^build"
@@ -15,22 +24,32 @@
         ".next/**",
         "!.next/cache/**",
         "build/**",
-        "node_modules/.cache/metro/**"
+        "dist/**",
+        "node_modules/.cache/metro/**",
+        "next-env.d.ts",
+        ".expo/**",
+        ".output/**",
+        ".vercel/output/**"
       ]
     },
     "clean": {
+      "cache": false,
       "dependsOn": [
         "^clean"
-      ],
-      "cache": false
+      ]
     },
-    "dev": {
-      "cache": false,
-      "persistent": true
+    "format": {
+      "outputs": [
+        "node_modules/.cache/.prettiercache"
+      ],
+      "outputMode": "new-only"
     },
     "lint": {
       "dependsOn": [
         "^lint"
+      ],
+      "outputs": [
+        "node_modules/.cache/.eslintcache"
       ]
     },
     "test": {

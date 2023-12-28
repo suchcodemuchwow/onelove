@@ -1,6 +1,6 @@
 {
-  "name": "@repo/mobile",
-  "version": "1.0.0",
+  "name": "mobile",
+  "version": "0.0.1",
   "private": true,
   "main": "index.js",
   "scripts": {
@@ -10,9 +10,20 @@
     "dev": "expo start -i -g",
     "eas-build-post-install": "pnpm run -w build:mobile",
     "ios": "expo start --ios",
-    "lint": "eslint --ext js,ts,tsx .",
+    "lint": "eslint . --max-warnings 0",
     "start": "expo start",
     "web": "expo start --web"
+  },
+  "prettier": "@acme/prettier-config",
+  "eslintConfig": {
+    "extends": [
+      "@acme/eslint-config/base",
+      "@acme/eslint-config/react"
+    ],
+    "ignorePatterns": [
+      "expo-plugins/**"
+    ],
+    "root": true
   },
   "dependencies": {
     "expo": "^49.0.21",
@@ -25,8 +36,10 @@
     "react-native-web": "~0.19.6"
   },
   "devDependencies": {
+    "@acme/eslint-config": "workspace:*",
+    "@acme/prettier-config": "workspace:*",
+    "@acme/tsconfig": "workspace:*",
     "@babel/core": "^7.19.3",
-    "@repo/eslint-config": "workspace:*",
     "@types/react": "18.2.45",
     "@types/react-dom": "18.2.18",
     "babel-preset-expo": "9.5.0"

@@ -41,9 +41,9 @@ This Turborepo includes the following packages/apps:
 
 #### Packages
 
-- `@repo/ui`: [Shadcn](https://ui.shadcn.com/) ui library
-- `@repo/eslint-config`: `eslint` configurations
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
+- `@acme/ui`: [Shadcn](https://ui.shadcn.com/) ui library
+- `@acme/eslint-config`: `eslint` configurations
+- `@acme/typescript-config`: `tsconfig.json`s used throughout the monorepo
 
 ### Utilities
 
