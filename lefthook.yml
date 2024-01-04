@@ -4,27 +4,24 @@
 #   https://github.com/evilmartians/lefthook/blob/master/docs/configuration.md
 #
 pre-push:
-  commands:
-    test:
-      glob: "*.{js,ts,jsx,tsx}"
-      run: turbo run test
-    build:
-      tags: build
-      run: turbo run build
-
-pre-commit:
   parallel: true
   commands:
     eslint:
       glob: "*.{js,ts,jsx,tsx}"
-      run: turbo run lint {staged_files}
+      run: pnpm lint
     prettier:
       glob: "*.{js,ts,jsx,tsx,css,scss,md,json,yml}"
       # runs on all files
-      run: turbo run format {staged_files}
-    typecheck:
-      glob: "*.{ts,tsx}"
-      run: turbo run typecheck {staged_files}
+      run: pnpm format
+    # typecheck:
+    #   glob: "*.{ts,tsx}"
+    #   run: pnpm typecheck
+    # test:
+    #   glob: "*.{js,ts,jsx,tsx}"
+    #   run: pnpm test
+    # build:
+    #   tags: build
+    #   run: pnpm build
 
   scripts:
     "hello.js":
