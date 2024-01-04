@@ -19,7 +19,7 @@ export class TransactionsController {
   constructor(private readonly transactionsService: TransactionsService) {}
 
   @Post()
-  asycreate(
+  create(
     @Body() createTransactionDto: CreateTransactionDto,
   ): Promise<CreateTransactionResponse> {
     return this.transactionsService.create(createTransactionDto);
