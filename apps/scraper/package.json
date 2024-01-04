@@ -10,7 +10,8 @@
     "format": "prettier --check . --ignore-path ../../.gitignore",
     "lint": "eslint . --max-warnings 0",
     "start": "node build/main.js",
-    "test": "echo \"Error: oops, the actor has no tests yet, sad!\""
+    "test": "echo \"Error: oops, the actor has no tests yet, sad!\"",
+    "typecheck": "tsc --noEmit"
   },
   "prettier": "@acme/prettier-config",
   "eslintConfig": {

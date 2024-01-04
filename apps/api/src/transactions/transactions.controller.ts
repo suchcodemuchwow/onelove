@@ -9,8 +9,10 @@ import {
   UseInterceptors,
 } from "@nestjs/common";
 
-import type { CreateTransactionResponse } from "./dto/create-transaction.dto";
-import { CreateTransactionDto } from "./dto/create-transaction.dto";
+import {
+  CreateTransactionDto,
+  CreateTransactionResponse,
+} from "./dto/create-transaction.dto";
 import { TransactionsService } from "./transactions.service";
 
 @UseInterceptors(CacheInterceptor)
@@ -21,7 +23,7 @@ export class TransactionsController {
   @Post()
   create(
     @Body() createTransactionDto: CreateTransactionDto,
-  ): Promise<CreateTransactionResponse> {
+  ): CreateTransactionResponse {
     return this.transactionsService.create(createTransactionDto);
   }
 

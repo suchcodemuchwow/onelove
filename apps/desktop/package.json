@@ -14,7 +14,8 @@
     "dev": "vite",
     "format": "prettier --check . --ignore-path ../../.gitignore",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit"
   },
   "prettier": "@acme/prettier-config",
   "eslintConfig": {

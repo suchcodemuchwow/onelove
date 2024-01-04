@@ -13,6 +13,7 @@
     "ios": "expo start --ios",
     "lint": "eslint . --max-warnings 0",
     "start": "expo start",
+    "typecheck": "tsc --noEmit",
     "web": "expo start --web"
   },
   "prettier": "@acme/prettier-config",

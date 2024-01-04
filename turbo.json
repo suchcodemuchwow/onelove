@@ -59,6 +59,11 @@
       "dependsOn": [
         "^test"
       ]
+    },
+    "typecheck": {
+      "dependsOn": [
+        "^typecheck"
+      ]
     }
   }
 }
