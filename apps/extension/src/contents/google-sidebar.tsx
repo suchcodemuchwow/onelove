@@ -1,45 +1,37 @@
 import type { PlasmoCSConfig } from "plasmo";
-import { useEffect, useState } from "react";
-import shadcnCssText from "data-text:../globals.css";
-import cssText from "data-text:./google-sidebar.css";
+import shadcnCssText from "data-text:../style.css";
 
-// Inject to the webpage itself
-import "./google-sidebar-base.css";
-
-import { Button } from "ui/components/ui/button";
+import { Button, Popover, PopoverContent, PopoverTrigger } from "@acme/ui";
 
 export const config: PlasmoCSConfig = {
+  all_frames: true,
   matches: ["https://www.google.com/*"],
 };
 
-// Inject into the ShadowDOM
 export const getStyle = () => {
   const style = document.createElement("style");
-  style.textContent = cssText + shadcnCssText;
+  style.textContent = shadcnCssText;
   return style;
 };
 
-export const getShadowHostId = () => "plasmo-google-sidebar";
-
 const GoogleSidebar = () => {
-  const [isOpen, setIsOpen] = useState(true);
-
-  useEffect(() => {
-    document.body.classList.toggle("plasmo-google-sidebar-show", isOpen);
-  }, [isOpen]);
+  const container = document.getElementById("plasmo-shadow-container");
 
   return (
-    <div id="sidebar" className={isOpen ? "open" : "closed"}>
-      <div id="root">
-        <button className="sidebar-toggle" onClick={() => setIsOpen(!isOpen)}>
-          {isOpen ? "🟡 Close" : "🟣 Open"}
-        </button>
-        <div className="flex w-full flex-col justify-center px-12">
-          <p>The Easiest Way to Build, Test, and Ship browser extensions</p>
-          <Button>Goooe</Button>
+    <Popover>
+      <PopoverTrigger asChild>
+        <Button variant={"default"} className={"text-nowrap"}>
+          ❤️ Onelove
+        </Button>
+      </PopoverTrigger>
+      <PopoverContent className="w-80" container={container}>
+        <div className="grid gap-4">
+          <div className="space-y-2">
+            <h4 className="font-medium leading-none">Onelove</h4>
+          </div>
         </div>
-      </div>
-    </div>
+      </PopoverContent>
+    </Popover>
   );
 };
 

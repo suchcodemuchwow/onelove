@@ -1,5 +1,7 @@
-export default {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
   content: ["./components/**/*.{ts,tsx}"],
+  mode: "jit",
   plugins: [require("tailwindcss-animate")],
   theme: {
     container: {
@@ -66,4 +68,4 @@ export default {
       },
     },
   },
-}
+};

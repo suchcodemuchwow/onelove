@@ -3,16 +3,19 @@
  */
 {
   $schema: "https://raw.githubusercontent.com/electron-userland/electron-builder/master/packages/app-builder-lib/scheme.json",
-  appId: "YourAppID",
+  appId: "com.suchcodemuchwow.onelove",
   asar: true,
-  productName: "YourAppName",
+  productName: "Onelove",
   directories: {
     output: "release/${version}",
+    buildResources: "src/assets",
   },
-  files: ["dist", "dist-electron"],
+  electronVersion: "26.6.3",
+  files: ["dist", "dist-electron", "public", "src/assets/**/*"],
   mac: {
     target: ["dmg"],
     artifactName: "${productName}-Mac-${version}-Installer.${ext}",
+    icon: "icon.png",
   },
   win: {
     target: [

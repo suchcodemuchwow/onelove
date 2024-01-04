@@ -2,9 +2,21 @@
   "extends": "@acme/tsconfig/base.json",
   "compilerOptions": {
     "baseUrl": "./",
-    "plugins": [{ "name": "next" }],
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
     "tsBuildInfoFile": "node_modules/.cache/tsbuildinfo.json"
   },
-  "include": ["./app/**/*.ts", "./app/**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules", "next.config.js", "postcss.config.js"]
+  "include": [
+    "./app/**/*.ts",
+    "./app/**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "next.config.js",
+    "postcss.config.js"
+  ]
 }

@@ -7,6 +7,14 @@ const config = {
   ],
   rules: {
     "react/prop-types": "off",
+    "react/jsx-curly-brace-presence": [
+      "error",
+      {
+        props: "always",
+        children: "ignore",
+        propElementValues: "always",
+      },
+    ],
   },
   globals: {
     React: "writable",

@@ -1,5 +1,5 @@
-import { app, BrowserWindow } from "electron";
 import path from "node:path";
+import { app, BrowserWindow, shell } from "electron";
 
 // The built directory structure
 //
@@ -17,11 +17,15 @@ process.env.VITE_PUBLIC = app.isPackaged
 
 let win: BrowserWindow | null;
 // 🚧 Use ['ENV_NAME'] avoid vite:define plugin - Vite@2.x
-const VITE_DEV_SERVER_URL = process.env["VITE_DEV_SERVER_URL"];
+const VITE_DEV_SERVER_URL = process.env.VITE_DEV_SERVER_URL;
 
 function createWindow() {
   win = new BrowserWindow({
-    icon: path.join(process.env.VITE_PUBLIC, "electron-vite.svg"),
+    minWidth: 640,
+    minHeight: 640,
+    width: 640,
+    height: 640,
+    icon: path.join(process.env.VITE_PUBLIC, "icon.png"),
     webPreferences: {
       preload: path.join(__dirname, "preload.js"),
     },
@@ -38,6 +42,11 @@ function createWindow() {
     // win.loadFile('DIST/index.html')
     win.loadFile(path.join(process.env.DIST, "index.html"));
   }
+
+  win.webContents.setWindowOpenHandler(({ url }) => {
+    shell.openExternal(url);
+    return { action: "deny" };
+  });
 }
 
 // Quit when all windows are closed, except on macOS. There, it's common

@@ -6,10 +6,10 @@
   "exclude": ["node_modules", ".plasmo", "build", "postcss.config.js"],
   "include": [
     ".plasmo/index.d.ts",
-    "./**/*.ts",
-    "./**/*.tsx",
-    "**/*.js",
-    "**/*.jsx"
+    "./src/**/*.ts",
+    "./src/**/*.tsx",
+    "./src/**/*.js",
+    "./src/**/*.jsx"
   ],
   "compilerOptions": {
     "strictNullChecks": true

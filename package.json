@@ -10,7 +10,8 @@
     "lint": "turbo lint --continue -- --cache --cache-location node_modules/.cache/.eslintcache",
     "lint:fix": "turbo lint --continue -- --fix --cache --cache-location node_modules/.cache/.eslintcache",
     "test": "turbo test",
-    "typecheck": "turbo typecheck"
+    "typecheck": "turbo typecheck",
+    "ui:add": "pnpm --filter ui ui:add"
   },
   "prettier": "@acme/prettier-config",
   "devDependencies": {
