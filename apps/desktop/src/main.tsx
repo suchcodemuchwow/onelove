@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-import HeroHeader from "@acme/ui/components/landing/hero";
+import { HeroHeader } from "@acme/ui/components/landing/hero";
 
 import "@acme/ui/styles/globals.css";
 import "@acme/ui/dist/index.css";
