@@ -24,10 +24,10 @@ const GoogleSidebar = () => {
           ❤️ Onelove
         </Button>
       </PopoverTrigger>
-      <PopoverContent className="w-80" container={container}>
-        <div className="grid gap-4">
-          <div className="space-y-2">
-            <h4 className="font-medium leading-none">Onelove</h4>
+      <PopoverContent className={"w-80"} container={container}>
+        <div className={"grid gap-4"}>
+          <div className={"space-y-2"}>
+            <h4 className={"font-medium leading-none"}>Onelove</h4>
           </div>
         </div>
       </PopoverContent>

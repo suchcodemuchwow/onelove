@@ -1,19 +1,17 @@
+import { CacheInterceptor } from "@nestjs/cache-manager";
 import {
+  Body,
   Controller,
   Get,
-  Post,
-  Body,
   Param,
   ParseUUIDPipe,
+  Post,
   UseInterceptors,
 } from "@nestjs/common";
+
+import type { CreateTransactionResponse } from "./dto/create-transaction.dto";
+import { CreateTransactionDto } from "./dto/create-transaction.dto";
 import { TransactionsService } from "./transactions.service";
-import type {
-  CreateTransactionResponse} from "./dto/create-transaction.dto";
-import {
-  CreateTransactionDto
-} from "./dto/create-transaction.dto";
-import { CacheInterceptor } from "@nestjs/cache-manager";
 
 @UseInterceptors(CacheInterceptor)
 @Controller("transactions")
@@ -22,7 +20,7 @@ export class TransactionsController {
 
   @Post()
   asycreate(
-    @Body() createTransactionDto: CreateTransactionDto
+    @Body() createTransactionDto: CreateTransactionDto,
   ): Promise<CreateTransactionResponse> {
     return this.transactionsService.create(createTransactionDto);
   }
@@ -34,7 +32,7 @@ export class TransactionsController {
 
   @Get(":transaction_id")
   findOne(
-    @Param("transaction_id", new ParseUUIDPipe({ version: "4" })) id: string
+    @Param("transaction_id", new ParseUUIDPipe({ version: "4" })) id: string,
   ) {
     console.log(id);
     return this.transactionsService.findOne();

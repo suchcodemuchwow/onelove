@@ -2,23 +2,32 @@
   "name": "desktop",
   "version": "0.0.1",
   "private": true,
+  "description": "An electron app",
   "author": {
     "name": "Acme Inc.",
     "email": "suchcodemuchwow@gmail.com"
   },
   "main": "dist-electron/main.js",
-  "description": "An electron app",
   "scripts": {
     "build": "tsc && vite build && electron-builder",
     "clean": "rm -rf node_modules .turbo dist dist-electron",
     "dev": "vite",
+    "format": "prettier --check . --ignore-path ../../.gitignore",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
+  "prettier": "@acme/prettier-config",
+  "eslintConfig": {
+    "extends": [
+      "@acme/eslint-config/base",
+      "@acme/eslint-config/react"
+    ],
+    "root": true
+  },
   "dependencies": {
+    "@acme/ui": "workspace:*",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "@acme/ui": "workspace:*"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@acme/eslint-config": "workspace:*",
@@ -29,21 +38,13 @@
     "@typescript-eslint/eslint-plugin": "^6.6.0",
     "@typescript-eslint/parser": "^6.6.0",
     "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.14",
     "electron": "^26.1.0",
     "electron-builder": "^24.6.4",
+    "postcss": "^8.4.24",
+    "tailwindcss": "^3.3.2",
     "vite": "^4.4.9",
     "vite-plugin-electron": "^0.14.0",
-    "vite-plugin-electron-renderer": "^0.14.5",
-    "autoprefixer": "^10.4.14",
-    "postcss": "^8.4.24",
-    "tailwindcss": "^3.3.2"
-  },
-  "eslintConfig": {
-    "extends": [
-      "@acme/eslint-config/base",
-      "@acme/eslint-config/react"
-    ],
-    "root": true
-  },
-  "prettier": "@acme/prettier-config"
+    "vite-plugin-electron-renderer": "^0.14.5"
+  }
 }

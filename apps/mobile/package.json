@@ -9,6 +9,7 @@
     "clean": "rm -rf node_modules .turbo",
     "dev": "expo start -i -g",
     "eas-build-post-install": "pnpm run -w build:mobile",
+    "format": "prettier --check . --ignore-path ../../.gitignore",
     "ios": "expo start --ios",
     "lint": "eslint . --max-warnings 0",
     "start": "expo start",

@@ -37,7 +37,7 @@ const social = [
   },
 ];
 
-export default function HeroHeader(props: HeroHeaderProps) {
+export function HeroHeader(props: HeroHeaderProps) {
   const { header, subheader, image } = props;
 
   return (

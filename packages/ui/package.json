@@ -7,9 +7,33 @@
     "build": "tailwindcss -i ./styles/globals.css -o dist/index.css",
     "build:watch": "tailwindcss -i ./styles/globals.css -o dist/index.css --watch",
     "clean": "rm -rf node_modules build",
+    "format": "prettier --check . --ignore-path ../../.gitignore",
     "lint": "eslint . --max-warnings 0",
     "typecheck": "tsc --noEmit"
   },
+  "prettier": "@acme/prettier-config",
+  "eslintConfig": {
+    "env": {
+      "amd": true,
+      "browser": true,
+      "node": true
+    },
+    "extends": [
+      "@acme/eslint-config/base",
+      "@acme/eslint-config/react"
+    ],
+    "rules": {
+      "@typescript-eslint/no-empty-interface": "off",
+      "@typescript-eslint/no-unsafe-assignment": "off",
+      "react/jsx-key": "off",
+      "react/no-unknown-property": "off",
+      "@next/next/no-html-link-for-pages": "off"
+    },
+    "root": true
+  },
+  "eslintIgnore": [
+    "components/ui"
+  ],
   "dependencies": {
     "@radix-ui/react-checkbox": "^1.0.4",
     "@radix-ui/react-dropdown-menu": "^2.0.6",
@@ -37,25 +61,5 @@
     "tailwindcss": "^3.3.5",
     "tailwindcss-animate": "^1.0.7",
     "tsup": "^8.0.1"
-  },
-  "eslintConfig": {
-    "env": {
-      "amd": true,
-      "browser": true,
-      "node": true
-    },
-    "extends": [
-      "@acme/eslint-config/base",
-      "@acme/eslint-config/react"
-    ],
-    "rules": {
-      "@typescript-eslint/no-empty-interface": "off",
-      "@typescript-eslint/no-unsafe-assignment": "off",
-      "react/jsx-key": "off",
-      "react/no-unknown-property": "off",
-      "@next/next/no-html-link-for-pages": "off"
-    },
-    "root": true
-  },
-  "prettier": "@acme/prettier-config"
+  }
 }

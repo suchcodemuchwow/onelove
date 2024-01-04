@@ -1,5 +1,5 @@
-import { IsDate, IsNumber, IsUUID } from "class-validator";
 import { ApiProperty } from "@nestjs/swagger";
+import { IsDate, IsNumber, IsUUID } from "class-validator";
 
 export class CreateTransactionDto {
   @IsUUID("all")

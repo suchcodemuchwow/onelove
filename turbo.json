@@ -39,6 +39,9 @@
       ]
     },
     "format": {
+      "dependsOn": [
+        "^format"
+      ],
       "outputs": [
         "node_modules/.cache/.prettiercache"
       ],

@@ -1,9 +1,10 @@
+import { CacheModule } from "@nestjs/cache-manager";
 import { Module } from "@nestjs/common";
 import { ConfigModule } from "@nestjs/config";
+
+import { AccountsModule } from "./accounts/accounts.module";
 import { PingModule } from "./ping/ping.module";
 import { TransactionsModule } from "./transactions/transactions.module";
-import { AccountsModule } from "./accounts/accounts.module";
-import { CacheModule } from "@nestjs/cache-manager";
 
 @Module({
   imports: [

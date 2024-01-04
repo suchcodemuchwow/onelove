@@ -6,9 +6,23 @@
     "build": "plasmo build",
     "clean": "rm -rf node_modules build .plasmo .turbo",
     "dev": "plasmo dev",
+    "format": "prettier --check . --ignore-path ../../.gitignore",
     "lint": "eslint . --max-warnings 0",
     "package": "plasmo package",
     "with-env": "dotenv -e ../../.env"
+  },
+  "prettier": "@acme/prettier-config",
+  "eslintConfig": {
+    "extends": [
+      "@acme/eslint-config/base",
+      "@acme/eslint-config/react"
+    ],
+    "rules": {
+      "react/jsx-key": "off",
+      "react/no-unknown-property": "off",
+      "@next/next/no-html-link-for-pages": "off"
+    },
+    "root": true
   },
   "dependencies": {
     "@acme/ui": "workspace:*",
@@ -32,19 +46,6 @@
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.24"
   },
-  "eslintConfig": {
-    "extends": [
-      "@acme/eslint-config/base",
-      "@acme/eslint-config/react"
-    ],
-    "rules": {
-      "react/jsx-key": "off",
-      "react/no-unknown-property": "off",
-      "@next/next/no-html-link-for-pages": "off"
-    },
-    "root": true
-  },
-  "prettier": "@acme/prettier-config",
   "manifest": {
     "host_permissions": [
       "https://*/*"
