@@ -1,0 +1,17 @@
+{
+  "extends": [
+    "@acme/tsconfig/base.json",
+    "../../node_modules/plasmo/templates/tsconfig.base.json"
+  ],
+  "exclude": ["node_modules", ".plasmo", "build", "postcss.config.js"],
+  "include": [
+    ".plasmo/index.d.ts",
+    "./src/**/*.ts",
+    "./src/**/*.tsx",
+    "./src/**/*.js",
+    "./src/**/*.jsx"
+  ],
+  "compilerOptions": {
+    "strictNullChecks": true
+  }
+}

@@ -1,0 +1,23 @@
+# EXAMPLE USAGE:
+#
+#   Refer for explanation to following link:
+#   https://github.com/evilmartians/lefthook/blob/master/docs/configuration.md
+#
+pre-push:
+  test:
+    run: pnpm test
+  build:
+    run: pnpm build
+
+pre-commit:
+  parallel: true
+  commands:
+    eslint:
+      run: pnpm lint
+    prettier:
+      run: pnpm format
+    typecheck:
+      run: pnpm typecheck
+  scripts:
+    "hello.js":
+      runner: node

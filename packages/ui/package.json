@@ -1,0 +1,52 @@
+{
+  "name": "@acme/ui",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "./components/index.ts",
+  "scripts": {
+    "build": "tailwindcss -i ./styles/globals.css -o dist/index.css",
+    "build:watch": "tailwindcss -i ./styles/globals.css -o dist/index.css --watch",
+    "clean": "rm -rf node_modules build dist .turbo",
+    "format": "prettier --check . --ignore-path ../../.gitignore",
+    "lint": "eslint . --max-warnings 0",
+    "typecheck": "tsc --noEmit"
+  },
+  "prettier": "@acme/prettier-config",
+  "eslintConfig": {
+    "env": {
+      "amd": true,
+      "browser": true,
+      "node": true
+    },
+    "extends": [
+      "@acme/eslint-config/base",
+      "@acme/eslint-config/react"
+    ],
+    "rules": {
+      "@typescript-eslint/no-empty-interface": "off",
+      "@typescript-eslint/no-unsafe-assignment": "off",
+      "react/jsx-key": "off",
+      "react/no-unknown-property": "off",
+      "@next/next/no-html-link-for-pages": "off"
+    },
+    "root": true
+  },
+  "eslintIgnore": [
+    "components/ui"
+  ],
+  "dependencies": {
+    "@radix-ui/react-checkbox": "^1.0.4",
+    "@radix-ui/react-dropdown-menu": "^2.0.6",
+    "@radix-ui/react-label": "^2.0.2",
+    "@radix-ui/react-popover": "^1.0.7",
+    "@radix-ui/react-slot": "^1.0.2",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.0.0",
+    "date-fns": "^3.0.6",
+    "lucide-react": "^0.301.0",
+    "react": "^18.2.0",
+    "react-day-picker": "^8.9.1",
+    "react-dom": "^18.2.0",
+    "tailwind-merge": "^2.2.0"
+  }
+}

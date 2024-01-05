@@ -1,0 +1,17 @@
+{
+  "extends": "@acme/tsconfig/react-library.json",
+  "compilerOptions": {
+    "paths": {
+      "@ui/*": ["./*"]
+    },
+    "baseUrl": "."
+  },
+  "include": ["."],
+  "exclude": [
+    "dist",
+    "build",
+    "node_modules",
+    "postcss.config.js",
+    "tailwind.config.js"
+  ]
+}
