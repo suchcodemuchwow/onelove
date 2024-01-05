@@ -23,7 +23,7 @@ pnpm install
 ### Development
 
 ```
-turbo run dev
+pnpm dev
 ```
 
 ## What's inside?
@@ -33,10 +33,10 @@ This Turborepo includes the following packages/apps:
 #### Apps
 
 - `frontend`: a [Next.js](https://nextjs.org/) app
-- `rest-api`: a [Nest.js](https://nestjs.com/) api
-- `mobile-app`: a [React Native-Expo](https://expo.dev/) app
-- `browser-extension`: a [Plasmo](https://www.plasmo.com/) extension
-- `desktop-app`: an [Electron](http://electron.atom.io/) app
+- `api`: a [Nest.js](https://nestjs.com/) api
+- `mobile`: a [React Native-Expo](https://expo.dev/) app
+- `extension`: a [Plasmo](https://www.plasmo.com/) browser extension
+- `desktop`: an [Electron](http://electron.atom.io/) app
 - `scraper`: a [Playwright](https://playwright.dev/) app
 
 #### Packages
@@ -53,14 +53,9 @@ This Turborepo has some additional tools already setup for you:
 - [ESLint](https://eslint.org/) for code linting
 - [Prettier](https://prettier.io) for code formatting
 - [Renovate](https://docs.renovatebot.com) for dependency updates
+- [Lefthook](https://github.com/evilmartians/lefthook) for git hooks
 
 ## Roadmap
 
-- [ ] Plasmo app
-- [ ] Mobile app
-- [ ] Desktop app
-- [ ] Scraper
-- [ ] Supabase
-- [ ] Vercel one click deploy
+- [ ] Tests
 - [ ] Github workflows
-- [ ] Docker
