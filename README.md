@@ -1,6 +1,8 @@
 # onelove 🫶
 
-<img src="https://media.giphy.com/media/YlYzh2nwfndCxSiuXq/giphy.gif" width="240" height="200"/>
+<div style="display:flex;">
+    <img src="./assets/onelove.png" width="full" />
+</div>
 
 ## Motivation
 
