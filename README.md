@@ -67,6 +67,23 @@ This Turborepo has some additional tools already setup for you:
 ## Dependencies
 | Package                                    | Description                                                             |
 | ------------------------------------------ | ----------------------------------------------------------------------- |
+| **crawlee**                                | Web scraping library.                                                   |
+| **electron**                               | Cross-platform desktop application framework.                           |
+| **eslint**                                 | JavaScript and TypeScript code quality checker.                         |
+| **expo**                                   | Framework for building universal native apps.                           |
+| **jest**                                   | JavaScript testing framework.                                           |
+| **lefthook**                               | Git hooks manager.                                                      |
+| **next**                                   | React framework for static websites.                                    |
+| **playwright**                             | Node library to automate browsers.                                      |
+| **plasmo**                                 | Plasmo framework.                                                       |
+| **prettier**                               | Opinionated code formatter.                                             |
+| **react**                                  | JavaScript library for building user interfaces.                        |
+| **react-native**                           | Framework for building native apps using React.                         |
+| **react-native-web**                       | React Native for the web.                                               |
+| **tailwindcss**                            | Utility-first CSS framework.                                            |
+| **turbo**                                  | Modern JavaScript runtime.                                              |
+| **typescript**                             | TypeScript language.                                                    |
+| **vite**                                   | Fast development server and build tool.                                 |
 | @babel/core                                | Babel compiler core.                                                    |
 | @ianvs/prettier-plugin-sort-imports        | Prettier plugin for sorting imports.                                    |
 | @nestjs/cache-manager                      | NestJS cache manager.                                                   |
@@ -88,40 +105,26 @@ This Turborepo has some additional tools already setup for you:
 | cache-manager                              | Generic caching module for Node.js.                                     |
 | class-transformer                          | Decorator-based object transformation library.                          |
 | class-validator                            | Validator and sanitizer for classes.                                    |
-| **crawlee**                                | Web scraping library.                                                   |
-| **electron**                               | Cross-platform desktop application framework.                           |
 | electron-builder                           | Create installers for Electron apps.                                    |
-| **eslint**                                 | JavaScript and TypeScript code quality checker.                         |
 | eslint-config-prettier                     | ESLint configuration for Prettier.                                      |
 | eslint-config-turbo                        | Turbo's ESLint configuration.                                           |
 | eslint-plugin-import                       | ESLint plugin for import/export syntax.                                 |
 | eslint-plugin-jsx-a11y                     | ESLint plugin for JSX accessibility rules.                              |
 | eslint-plugin-react                        | ESLint plugin for React.                                                |
 | eslint-plugin-react-hooks                  | ESLint plugin for React Hooks.                                          |
-| **expo**                                   | Framework for building universal native apps.                           |
 | expo-dev-client                            | Expo development client.                                                |
 | expo-status-bar                            | Expo status bar component.                                              |
 | expo-updates                               | Expo updates module.                                                    |
-| **jest**                                   | JavaScript testing framework.                                           |
-| **lefthook**                               | Git hooks manager.                                                      |
 | lucide-react                               | SVG icon component library.                                             |
-| **next**                                   | React framework for static websites.                                    |
-| **playwright**                             | Node library to automate browsers.                                      |
-| **plasmo**                                 | Plasmo framework.                                                       |
 | postcss                                    | Tool for transforming styles with JS plugins.                           |
-| **prettier**                               | Opinionated code formatter.                                             |
 | prettier-plugin-tailwindcss                | Prettier plugin for Tailwind CSS.                                       |
-| **react**                                  | JavaScript library for building user interfaces.                        |
 | react-dom                                  | Entry point to the DOM and server renderers for React.                  |
-| **react-native**                           | Framework for building native apps using React.                         |
-| **react-native-web**                       | React Native for the web.                                               |
 | react-router-dom                           | Declarative routing for React.js.                                       |
 | reflect-metadata                           | Decorator metadata reflection library.                                  |
 | rxjs                                       | Reactive programming library.                                           |
 | source-map-support                         | Adds source map support to Node.js.                                     |
 | supertest                                  | HTTP assertion library for testing Node.js HTTP servers.                |
 | tailwind-merge                             | Tailwind CSS utility for merging configurations.                        |
-| **tailwindcss**                            | Utility-first CSS framework.                                            |
 | tailwindcss-animate                        | Tailwind CSS plugin for animations.                                     |
 | ts-jest                                    | Jest preprocessor for TypeScript.                                       |
 | ts-loader                                  | TypeScript loader for webpack.                                          |
@@ -129,9 +132,6 @@ This Turborepo has some additional tools already setup for you:
 | tsconfig-paths                             | Resolve TypeScript module aliases.                                      |
 | tsup                                       | TypeScript module bundler.                                              |
 | tsx                                        | TypeScript React JSX support.                                           |
-| **turbo**                                  | Modern JavaScript runtime.                                              |
-| **typescript**                             | TypeScript language.                                                    |
-| **vite**                                   | Fast development server and build tool.                                 |
 | vite-plugin-electron                       | Vite plugin for Electron.                                               |
 | vite-plugin-electron-renderer              | Vite plugin for Electron renderer.                                      |
 
