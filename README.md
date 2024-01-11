@@ -75,13 +75,13 @@ This Turborepo has some additional tools already setup for you:
 | **lefthook**                               | Git hooks manager.                                                      |
 | **next**                                   | React framework for static websites.                                    |
 | **playwright**                             | Node library to automate browsers.                                      |
-| **plasmo**                                 | Plasmo framework.                                                       |
+| **plasmo**                                 | Browser extension framework.                                            |
 | **prettier**                               | Opinionated code formatter.                                             |
 | **react**                                  | JavaScript library for building user interfaces.                        |
 | **react-native**                           | Framework for building native apps using React.                         |
 | **react-native-web**                       | React Native for the web.                                               |
 | **tailwindcss**                            | Utility-first CSS framework.                                            |
-| **turbo**                                  | Modern JavaScript runtime.                                              |
+| **turbo**                                  | High-performance build system for JavaScript and TypeScript.            |
 | **typescript**                             | TypeScript language.                                                    |
 | **vite**                                   | Fast development server and build tool.                                 |
 | @babel/core                                | Babel compiler core.                                                    |
