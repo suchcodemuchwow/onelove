@@ -228,8 +228,8 @@ importers:
         specifier: ^0.6.0
         version: 0.6.1(react@18.2.0)
       lucide-react:
-        specifier: ^0.301.0
-        version: 0.301.0(react@18.2.0)
+        specifier: ^0.309.0
+        version: 0.309.0(react@18.2.0)
       plasmo:
         specifier: 0.84.0
         version: 0.84.0(postcss@8.4.33)(react-dom@18.2.0)(react@18.2.0)(ts-node@10.9.2)
@@ -321,8 +321,8 @@ importers:
         specifier: ^3.0.6
         version: 3.0.6
       lucide-react:
-        specifier: ^0.301.0
-        version: 0.301.0(react@18.2.0)
+        specifier: ^0.309.0
+        version: 0.309.0(react@18.2.0)
       react:
         specifier: ^18.2.0
         version: 18.2.0
@@ -14067,8 +14067,8 @@ packages:
     dependencies:
       yallist: 4.0.0
 
-  /lucide-react@0.301.0(react@18.2.0):
-    resolution: {integrity: sha512-ZMbsXSv8qg3u0wqGngW+dG2Tu20fBqQAu3e0MikjGIx6KUN+4TrL2j3XwWZCcpHEfH9Tw+gqnQXRhHVne5DzJQ==}
+  /lucide-react@0.309.0(react@18.2.0):
+    resolution: {integrity: sha512-zNVPczuwFrCfksZH3zbd1UDE6/WYhYAdbe2k7CImVyPAkXLgIwbs6eXQ4loigqDnUFjyFYCI5jZ1y10Kqal0dg==}
     peerDependencies:
       react: ^16.5.1 || ^17.0.0 || ^18.0.0
     dependencies:
