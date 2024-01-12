@@ -19,6 +19,3 @@ pre-commit:
       run: pnpm format
     typecheck:
       run: pnpm typecheck
-  scripts:
-    "hello.js":
-      runner: node
