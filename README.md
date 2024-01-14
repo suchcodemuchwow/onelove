@@ -29,6 +29,10 @@ pnpm install
 
 # Then simply start your app
 pnpm dev
+
+# https://wix.github.io/Detox/docs/introduction/environment-setup#2-macos-only-applesimutils
+brew tap wix/brew
+brew install applesimutils
 ```
 
 ## Motivation

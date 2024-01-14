@@ -8,7 +8,6 @@
     "clean": "rm -rf node_modules build storage .turbo",
     "dev": "tsx src/main.ts",
     "format": "prettier --check . --ignore-path ../../.gitignore",
-    "preinstall": "pnpm dlx playwright install --with-deps",
     "lint": "eslint . --max-warnings 0",
     "start": "node build/main.js",
     "test": "echo \"Error: oops, the actor has no tests yet, sad!\"",

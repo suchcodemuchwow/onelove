@@ -1,12 +1,17 @@
-// Learn more https://docs.expo.dev/guides/monorepos
-const { getDefaultConfig } = require("expo/metro-config");
+/** @type {import('expo/metro-config').MetroConfig} */
 const { FileStore } = require("metro-cache");
 const path = require("path");
 
-const projectRoot = __dirname;
-const workspaceRoot = path.resolve(projectRoot, "../..");
+const { getDefaultConfig } = require("expo/metro-config");
 
-const config = getDefaultConfig(projectRoot);
+const projectRoot = __dirname;
+
+const config = getDefaultConfig(projectRoot, {
+  // Enable CSS support.
+  isCSSEnabled: true,
+});
+
+const workspaceRoot = path.resolve(projectRoot, "../..");
 
 // #1 - Watch all files in the monorepo
 config.watchFolders = [workspaceRoot];
@@ -17,6 +22,8 @@ config.resolver.nodeModulesPaths = [
   path.resolve(projectRoot, "node_modules"),
   path.resolve(workspaceRoot, "node_modules"),
 ];
+
+config.resolver.sourceExts = ["jsx", "js", "ts", "tsx", "cjs", "mjs", "json"];
 
 // Use turborepo to restore the cache when possible
 config.cacheStores = [

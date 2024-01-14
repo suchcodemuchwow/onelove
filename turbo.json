@@ -11,11 +11,6 @@
       "cache": false,
       "persistent": true
     },
-    "frontend#dev": {
-      "dependsOn": [
-        "@acme/ui#build"
-      ]
-    },
     "build": {
       "dependsOn": [
         "^build"
@@ -30,6 +25,31 @@
         ".expo/**",
         ".output/**",
         ".vercel/output/**"
+      ]
+    },
+    "build:e2e": {},
+    "frontend#dev": {
+      "dependsOn": [
+        "@acme/ui#build"
+      ],
+      "cache": true
+    },
+    "frontend#build:e2e": {
+      "dependsOn": [
+        "@acme/ui#build"
+      ],
+      "cache": true
+    },
+    "mobile#test:e2e": {
+      "cache": false,
+      "dependsOn": [
+        "mobile#build:e2e"
+      ]
+    },
+    "test:e2e": {
+      "cache": false,
+      "dependsOn": [
+        "build:e2e"
       ]
     },
     "clean": {

@@ -1,41 +1,19 @@
-import {
-  GithubIcon,
-  InstagramIcon,
-  LinkedinIcon,
-  TwitterIcon,
-} from "lucide-react";
-
 import { Button } from "../ui/button";
+import { Icons } from "../ui/icons";
+
+export interface Social {
+  href: string;
+  platform: "github" | "twitter" | "linkedin" | "instagram";
+}
 
 interface HeroHeaderProps {
   header: string;
   subheader: string;
   image: string;
+  social?: Social[];
 }
 
 const IMG_SIZE = 150;
-const social = [
-  {
-    name: "GitHub",
-    href: "https://www.github.com/suchcodemuchwow/onelove",
-    icon: GithubIcon,
-  },
-  {
-    name: "Twitter",
-    href: "https://www.twitter.com/suchcodemuchwow",
-    icon: TwitterIcon,
-  },
-  {
-    name: "Instagram",
-    href: "https://www.instagram.com/suchcodemuchwow",
-    icon: InstagramIcon,
-  },
-  {
-    name: "LinkedIn",
-    href: "https://www.linkedin.com/in/suchcodemuchwow",
-    icon: LinkedinIcon,
-  },
-];
 
 export function HeroHeader(props: HeroHeaderProps) {
   const { header, subheader, image } = props;
@@ -53,22 +31,28 @@ export function HeroHeader(props: HeroHeaderProps) {
           </div>
         </div>
       </div>
-      <div className={"flex flex-col gap-y-2"}>
-        Follow me on social media:
-        <div className={"flex justify-center gap-2"}>
-          {social.map((s) => (
-            <Button
-              key={s.name}
-              onClick={() => window.open(s.href, "_blank")}
-              rel={"noreferrer"}
-              variant={"outline"}
-            >
-              <s.icon size={12} className={"mr-2"} />
-              {s.name}
-            </Button>
-          ))}
+      {props.social && (
+        <div className={"flex flex-col gap-y-2"}>
+          Follow me on social media:
+          <div className={"flex justify-center gap-2"}>
+            {props.social.map((s) => {
+              return (
+                s && (
+                  <Button
+                    key={s.platform}
+                    onClick={() => window.open(s.href, "_blank")}
+                    rel={"noreferrer"}
+                    variant={"outline"}
+                  >
+                    {Icons[s.platform]({ className: "mr-2" })}
+                    {s.platform}
+                  </Button>
+                )
+              );
+            })}
+          </div>
         </div>
-      </div>
+      )}
     </section>
   );
 }

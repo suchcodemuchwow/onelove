@@ -1,33 +1,39 @@
 {
   "expo": {
-    "name": "onelove",
-    "slug": "onelove",
-    "version": "1.0.0",
-    "orientation": "portrait",
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#FFFFFF",
+        "foregroundImage": "./assets/adaptive-icon.png"
+      },
+      "package": "com.suchcodemuchwow.onelove"
+    },
+    "assetBundlePatterns": ["**/*"],
     "icon": "./assets/icon.png",
+    "ios": {
+      "buildNumber": "1.0.0",
+      "bundleIdentifier": "com.suchcodemuchwow.onelove",
+      "supportsTablet": true
+    },
+    "name": "onelove",
+    "orientation": "portrait",
+    "plugins": ["@config-plugins/detox"],
+    "slug": "onelove",
     "splash": {
+      "backgroundColor": "#ffffff",
       "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "resizeMode": "contain"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": ["**/*"],
-    "ios": {
-      "bundleIdentifier": "com.suchcodemuchwow.onelove",
-      "buildNumber": "1.0.0",
-      "supportsTablet": true
-    },
-    "android": {
-      "package": "com.suchcodemuchwow.onelove",
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
-      }
-    },
+    "version": "1.0.0",
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "28d37b65-ced0-4794-a854-5d5926c3de2b"
+      }
     }
   }
 }

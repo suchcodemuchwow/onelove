@@ -49,11 +49,12 @@ storage
 # Expo
 .expo/
 dist/
-expo-env.d.ts
 apps/expo/.gitignore
 
 # Production
 build
+ios
+android
 
 # TypeScript
 *.tsbuildinfo
@@ -68,118 +69,9 @@ logs
 *.njsproj
 *.sln
 *.sw?
-apps/desktop/dist-electron/main.js
-apps/desktop/dist-electron/preload.js
-apps/desktop/release/0.0.1/builder-debug.yml
-apps/desktop/release/0.0.1/Onelove-Mac-0.0.1-Installer.dmg
-apps/desktop/release/0.0.1/Onelove-Mac-0.0.1-Installer.dmg.blockmap
-apps/desktop/release/0.0.1/YourAppName-Mac-0.0.1-Installer.dmg
-apps/desktop/release/0.0.1/YourAppName-Mac-0.0.1-Installer.dmg.blockmap
-apps/desktop/release/0.0.1/.icon-icns/icon.icns
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Info.plist
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/PkgInfo
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Electron Framework
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Helpers
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Libraries
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Resources
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/Current
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Electron Framework
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/libEGL.dylib
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/libffmpeg.dylib
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/libGLESv2.dylib
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/libvk_swiftshader.dylib
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/vk_swiftshader_icd.json
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/chrome_100_percent.pak
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/chrome_200_percent.pak
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/icudtl.dat
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/Info.plist
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/MainMenu.nib
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/resources.pak
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/v8_context_snapshot.arm64.bin
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/af.lproj/locale.pak
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/am.lproj/locale.pak
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ar.lproj/locale.pak
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/bg.lproj/locale.pak
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/bn.lproj/locale.pak
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ca.lproj/locale.pak
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/cs.lproj/locale.pak
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/da.lproj/locale.pak
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/de.lproj/locale.pak
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/el.lproj/locale.pak
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/en.lproj/locale.pak
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/en_GB.lproj/locale.pak
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/es.lproj/locale.pak
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/es_419.lproj/locale.pak
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/et.lproj/locale.pak
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/fa.lproj/locale.pak
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/fi.lproj/locale.pak
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/fil.lproj/locale.pak
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/fr.lproj/locale.pak
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/gu.lproj/locale.pak
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/he.lproj/locale.pak
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/hi.lproj/locale.pak
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/hr.lproj/locale.pak
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/hu.lproj/locale.pak
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/id.lproj/locale.pak
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/it.lproj/locale.pak
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ja.lproj/locale.pak
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/kn.lproj/locale.pak
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ko.lproj/locale.pak
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/lt.lproj/locale.pak
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/lv.lproj/locale.pak
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ml.lproj/locale.pak
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/mr.lproj/locale.pak
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ms.lproj/locale.pak
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/nb.lproj/locale.pak
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/nl.lproj/locale.pak
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/pl.lproj/locale.pak
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/pt_BR.lproj/locale.pak
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/pt_PT.lproj/locale.pak
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ro.lproj/locale.pak
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ru.lproj/locale.pak
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/sk.lproj/locale.pak
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/sl.lproj/locale.pak
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/sr.lproj/locale.pak
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/sv.lproj/locale.pak
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/sw.lproj/locale.pak
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ta.lproj/locale.pak
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/te.lproj/locale.pak
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/th.lproj/locale.pak
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/tr.lproj/locale.pak
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/uk.lproj/locale.pak
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ur.lproj/locale.pak
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/vi.lproj/locale.pak
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/zh_CN.lproj/locale.pak
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/zh_TW.lproj/locale.pak
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Mantle.framework/Mantle
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Mantle.framework/Resources
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Mantle.framework/Versions/Current
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Mantle.framework/Versions/A/Mantle
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Mantle.framework/Versions/A/Resources/Info.plist
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Onelove Helper (GPU).app/Contents/Info.plist
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Onelove Helper (GPU).app/Contents/PkgInfo
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Onelove Helper (GPU).app/Contents/MacOS/Onelove Helper (GPU)
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Onelove Helper (Plugin).app/Contents/Info.plist
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Onelove Helper (Plugin).app/Contents/PkgInfo
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Onelove Helper (Plugin).app/Contents/MacOS/Onelove Helper (Plugin)
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Onelove Helper (Renderer).app/Contents/Info.plist
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Onelove Helper (Renderer).app/Contents/PkgInfo
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Onelove Helper (Renderer).app/Contents/MacOS/Onelove Helper (Renderer)
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Onelove Helper.app/Contents/Info.plist
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Onelove Helper.app/Contents/PkgInfo
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Onelove Helper.app/Contents/MacOS/Onelove Helper
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/ReactiveObjC.framework/ReactiveObjC
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/ReactiveObjC.framework/Resources
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/ReactiveObjC.framework/Versions/Current
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/ReactiveObjC.framework/Versions/A/ReactiveObjC
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/ReactiveObjC.framework/Versions/A/Resources/Info.plist
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Squirrel.framework/Resources
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Squirrel.framework/Squirrel
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Squirrel.framework/Versions/Current
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Squirrel.framework/Versions/A/Squirrel
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Squirrel.framework/Versions/A/Resources/Info.plist
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Frameworks/Squirrel.framework/Versions/A/Resources/ShipIt
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/MacOS/Onelove
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Resources/app.asar
-apps/desktop/release/0.0.1/mac-arm64/Onelove.app/Contents/Resources/icon.icns
+apps/desktop/dist-electron/*
+apps/desktop/release/*
+apps/mobile/artifacts/*
+
+# Test Coverage
+playwright-report

@@ -4,19 +4,40 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "android": "expo start --android",
-    "build": "expo export --output-dir ./build --platform all",
-    "clean": "rm -rf node_modules .turbo build",
+    "android": "expo run:android",
+    "prebuild:e2e": "pnpm ios",
+    "build:e2e": "../../node_modules/.bin/detox build -c ios.release",
+    "build:e2e:android": "../../node_modules/.bin/detox build -c android.release",
+    "clean": "rm -rf artifacts build coverage android ios node_modules .turbo .expo",
     "dev": "expo start -i -g",
     "eas-build-post-install": "pnpm run -w build:mobile",
     "format": "prettier --check . --ignore-path ../../.gitignore",
-    "ios": "expo start --ios",
+    "ios": "expo run:ios",
     "lint": "eslint . --max-warnings 0",
+    "postinstall": "expo prebuild --no-install",
     "start": "expo start",
-    "typecheck": "tsc --noEmit",
-    "web": "expo start --web"
+    "test": "../../node_modules/.bin/jest --silent --ci --coverage --testLocationInResults --json --outputFile=\"report.json\"",
+    "test:debug": "../../node_modules/.bin/jest -o --watch --coverage=false",
+    "test:dev": "../../node_modules/.bin/jest --watch --coverage=false --changedSince=origin/main",
+    "test:e2e:android": "../../node_modules/.bin/detox test -c android.release --forceExit --cleanup",
+    "test:e2e:android:headless": "../../node_modules/.bin/detox test -c android.release --forceExit --cleanup --headless",
+    "test:e2e": "../../node_modules/.bin/detox test -c ios.release --forceExit --cleanup",
+    "test:e2e:headless": "../../node_modules/.bin/detox test -c ios.release --forceExit --cleanup --headless",
+    "test:update-snapshots": "../../node_modules/.bin/jest -u --coverage=false",
+    "typecheck": "tsc --noEmit"
   },
-  "prettier": "@acme/prettier-config",
+  "dependencies": {
+    "expo": "^49.0.21",
+    "expo-dev-client": "~2.4.8",
+    "expo-splash-screen": "~0.20.5",
+    "expo-status-bar": "1.7.1",
+    "expo-updates": "0.18.19",
+    "jest-expo": "^49.0.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-native": "0.72.6",
+    "react-native-web": "~0.19.6"
+  },
   "eslintConfig": {
     "extends": [
       "@acme/eslint-config/base",
@@ -27,14 +48,8 @@
     ],
     "root": true
   },
-  "dependencies": {
-    "expo": "^49.0.21",
-    "expo-dev-client": "~2.4.8",
-    "expo-status-bar": "1.7.1",
-    "expo-updates": "0.18.19",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-native": "0.72.6",
-    "react-native-web": "~0.19.6"
+  "prettier": "@acme/prettier-config",
+  "devDependencies": {
+    "@babel/core": "^7.20.0"
   }
 }
