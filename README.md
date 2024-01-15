@@ -4,16 +4,30 @@
     <img src="./assets/onelove.png" width="full" />
 </div>
 
-## Table of Contents
+## 🚀 Motivation
+
+As a creator and relentless dreamer, navigating the intricate process of crafting complete products felt overwhelming. Developing frontend, backend, mobile, scrapers, and various components for each repository seemed like a series of separate battles and redundant efforts. I envisioned a space where the challenges of developing entire products could be addressed directly. A place where collaboration flowed naturally, contracts seamlessly, and tooling was a boon rather than a necessary evil.
+
+## 🎯 Goals
+- **Technology Agnostic:** Use your preferred tech stack - be it Vercel, GCP, AWS, Supabase, Firebase, Prisma, Drizzle, etc.
+- **Ease of Use:** No boilerplate code, no unnecessary folder structures - just simplicity.
+- **Frameworks with Community Support:** Leverage widely-used frameworks with large communities such as Next.js, Nest.js, React Native, Electron, Playwright, and Plasmo.
+
+## 📝 Todo
+- [ ] Shared types package
+
+## 📚 Table of Contents
 
 - [Getting Started](#getting-started)
 - [Motivation](#motivation)
-- [What's inside](#whats-inside)
+- [What's Inside](#whats-inside)
 - [Dependencies](#dependencies)
+- [Running e2e Tests](#running-e2e-tests)
 - [Changelog](#changelog)
 - [Contributing](#contributing)
+- [License](#license)
 
-## Getting Started
+## 🚀 Getting Started
 
 **Step 1:** The easiest way to get started is to clone the repository:
 
@@ -29,17 +43,9 @@ pnpm install
 
 # Then simply start your app
 pnpm dev
-
-# https://wix.github.io/Detox/docs/introduction/environment-setup#2-macos-only-applesimutils
-brew tap wix/brew
-brew install applesimutils
 ```
 
-## Motivation
-
-Over the time while developing projects that requires different stacks(frontend, mobile, extension, desktop, api, scraper etc.) I found myself repeating and not being productive because of all the effort to maintain repo chores. This is an effort to end the pain...
-
-## What's inside?
+## 📦 What's Inside?
 
 This Turborepo includes the following packages/apps:
 
@@ -60,7 +66,7 @@ This Turborepo includes the following packages/apps:
 
 #### Utilities
 
-This Turborepo has some additional tools already setup for you:
+This Turborepo has some additional tools already set up for you:
 
 - [TypeScript](https://www.typescriptlang.org/) for static type checking
 - [ESLint](https://eslint.org/) for code linting
@@ -68,7 +74,7 @@ This Turborepo has some additional tools already setup for you:
 - [Renovate](https://docs.renovatebot.com) for dependency updates
 - [Lefthook](https://github.com/evilmartians/lefthook) for git hooks
 
-## Dependencies
+## 🛠️ Dependencies
 | Package                                    | Description                                                             |
 | ------------------------------------------ | ----------------------------------------------------------------------- |
 | **crawlee**                                | Web scraping library.                                                   |
@@ -139,23 +145,28 @@ This Turborepo has some additional tools already setup for you:
 | vite-plugin-electron                       | Vite plugin for Electron.                                               |
 | vite-plugin-electron-renderer              | Vite plugin for Electron renderer.                                      |
 
-## Roadmap
+## 🧪 Running e2e Tests
+To run e2e tests for mobile, ensure you have the following installed:
 
-- [ ] Tests
-- [ ] Github workflows
+```bash
+# Install applesimutils
+brew tap wix/brew
+brew install applesimutils
+```
 
-## Changelog
-You can find the changelog for the project in: [CHANGELOG.md](https://github.com/suchcodemuchwow/onelove/blob/main/CHANGELOG.md)
+Please run the mobile app the first time you start using the repository; otherwise, Detox may not find the app.
 
-## Contributing
-If something is unclear, confusing, or needs to be refactored, please let me know.
-Pull requests are always welcome. Please open an issue before submitting a pull request. This project uses [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript) with a few minor exceptions.
+## 📜 Changelog
+Check out the changelog for the project [here](https://github.com/suchcodemuchwow/onelove/blob/main/CHANGELOG.md).
 
-## License
+## 🤝 Contributing
+If something is unclear, confusing, or needs refactoring, please let me know. Pull requests are always welcome. Please open an issue before submitting a pull request. This project adheres to the [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript) with a few minor exceptions.
+
+## 📄 License
 Copyright (c) 2023-2024 suchcodemuchwow
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+THE SOFTWARE IS PROVIDED "AS IS," WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
