@@ -13,9 +13,6 @@ As a creator and relentless dreamer, navigating the intricate process of craftin
 - **Ease of Use:** No boilerplate code, no unnecessary folder structures - just simplicity.
 - **Frameworks with Community Support:** Leverage widely-used frameworks with large communities such as Next.js, Nest.js, React Native, Electron, Playwright, and Plasmo.
 
-## 📝 Todo
-- [ ] Shared types package
-
 ## 📚 Table of Contents
 
 - [Getting Started](#getting-started)
@@ -155,6 +152,9 @@ brew install applesimutils
 ```
 
 Please run the mobile app the first time you start using the repository; otherwise, Detox may not find the app.
+
+## 📝 Todo
+- [ ] Shared types package
 
 ## 📜 Changelog
 Check out the changelog for the project [here](https://github.com/suchcodemuchwow/onelove/blob/main/CHANGELOG.md).
