@@ -11,7 +11,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
     <HeroHeader
       header={"Welcome to Onelove!"}
       subheader={
-        "Web 🛜, Mobile 📱, Desktop 🖥️, Browser Extensions 🔮, APIs 👮‍♂️ and Scrapers 🕸️"
+        "Web 🛜, Mobile 📱, Desktop 🖥️, Browser Extensions 🔮, APIs 👮‍♂️ and Scraper 🕸️"
       }
       image={"icon.png"}
     />

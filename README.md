@@ -6,7 +6,7 @@
 
 ## 🚀 Motivation
 
-As a creator and relentless dreamer, navigating the intricate process of crafting complete products felt overwhelming. Developing frontend, backend, mobile, scrapers, and various components for each repository seemed like a series of separate battles and redundant efforts. I envisioned a space where the challenges of developing entire products could be addressed directly. A place where collaboration flowed naturally, contracts seamlessly, and tooling was a boon rather than a necessary evil.
+As a creator and relentless dreamer, navigating the intricate process of crafting complete products felt overwhelming. Developing frontend, backend, mobile, Scraper, and various components for each repository seemed like a series of separate battles and redundant efforts. I envisioned a space where the challenges of developing entire products could be addressed directly. A place where collaboration flowed naturally, contracts seamlessly, and tooling was a boon rather than a necessary evil.
 
 ## 🎯 Goals
 - **Technology Agnostic:** Use your preferred tech stack - be it Vercel, GCP, AWS, Supabase, Firebase, Prisma, Drizzle, etc.
@@ -45,6 +45,10 @@ pnpm dev
 ## 📦 What's Inside?
 
 This Turborepo includes the following packages/apps:
+
+<div style="display:flex;">
+    <img src="./assets/apps.png" width="full" />
+</div>
 
 #### Apps
 
