@@ -20,7 +20,7 @@ jobs:
       run: pnpm exec playwright install --with-deps
     - name: Run Playwright tests
       run: turbo test:e2e -F frontend
-    - uses: actions/upload-artifact@v3
+    - uses: actions/upload-artifact@v4
       if: always()
       with:
         name: playwright-report
