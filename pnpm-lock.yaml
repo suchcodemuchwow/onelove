@@ -45,8 +45,8 @@ importers:
         specifier: 4.0.1
         version: 4.0.1(prettier@3.1.1)
       '@types/chrome':
-        specifier: 0.0.256
-        version: 0.0.256
+        specifier: 0.0.257
+        version: 0.0.257
       '@types/eslint':
         specifier: ^8.44.7
         version: 8.56.1
@@ -7562,8 +7562,8 @@ packages:
       '@types/responselike': 1.0.3
     dev: true
 
-  /@types/chrome@0.0.256:
-    resolution: {integrity: sha512-NleTQw4DNzhPwObLNuQ3i3nvX1rZ1mgnx5FNHc2KP+Cj1fgd3BrT5yQ6Xvs+7H0kNsYxCY+lxhiCwsqq3JwtEg==}
+  /@types/chrome@0.0.257:
+    resolution: {integrity: sha512-kfWNKMTYJ3Qk6vvM+YPSgDh6Ci290uOxtfSaYxgv2SCdZ9OvX8PyvMDrdP9+k50g9jBllWDpG68aJVlwXuvDNg==}
     dependencies:
       '@types/filesystem': 0.0.35
       '@types/har-format': 1.2.15
