@@ -45,8 +45,8 @@ importers:
         specifier: 4.0.1
         version: 4.0.1(prettier@3.1.1)
       '@types/chrome':
-        specifier: 0.0.258
-        version: 0.0.258
+        specifier: 0.0.260
+        version: 0.0.260
       '@types/eslint':
         specifier: ^8.44.7
         version: 8.56.1
@@ -3178,7 +3178,7 @@ packages:
       '@expo/devcert': 1.1.0
       '@expo/env': 0.2.1
       '@expo/image-utils': 0.4.1
-      '@expo/json-file': 8.2.37
+      '@expo/json-file': 8.3.0
       '@expo/metro-config': 0.17.4(@react-native/babel-preset@0.73.19)
       '@expo/osascript': 2.0.33
       '@expo/package-manager': 1.1.2
@@ -3403,7 +3403,7 @@ packages:
       '@babel/code-frame': 7.10.4
       '@expo/config-plugins': 7.8.4
       '@expo/config-types': 50.0.0
-      '@expo/json-file': 8.2.37
+      '@expo/json-file': 8.3.0
       getenv: 1.0.0
       glob: 7.1.6
       require-from-string: 2.0.2
@@ -3707,7 +3707,7 @@ packages:
       '@expo/config-plugins': 7.8.4
       '@expo/config-types': 50.0.0
       '@expo/image-utils': 0.4.1
-      '@expo/json-file': 8.2.37
+      '@expo/json-file': 8.3.0
       debug: 4.3.4
       expo-modules-autolinking: 1.10.3
       fs-extra: 9.1.0
@@ -7857,8 +7857,8 @@ packages:
       '@types/responselike': 1.0.3
     dev: true
 
-  /@types/chrome@0.0.258:
-    resolution: {integrity: sha512-vicJi6cg2zaFuLmLY7laG6PHBknjKFusPYlaKQ9Zlycskofy71rStlGvW07MUuqUIVorZf8k5KH+zeTTGcH2dQ==}
+  /@types/chrome@0.0.260:
+    resolution: {integrity: sha512-lX6QpgfsZRTDpNcCJ+3vzfFnFXq9bScFRTlfhbK5oecSAjamsno+ejFTCbNtc5O/TPnVK9Tja/PyecvWQe0F2w==}
     dependencies:
       '@types/filesystem': 0.0.35
       '@types/har-format': 1.2.15
