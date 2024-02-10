@@ -171,8 +171,8 @@ importers:
         specifier: ^5.0.0
         version: 5.0.11(@types/node@20.10.6)
       vite-plugin-electron:
-        specifier: ^0.14.0
-        version: 0.14.1(vite-plugin-electron-renderer@0.14.5)
+        specifier: ^0.28.0
+        version: 0.28.1(electron@28.1.3)(vite-plugin-electron-renderer@0.14.5)
       vite-plugin-electron-renderer:
         specifier: ^0.14.5
         version: 0.14.5
@@ -19331,14 +19331,21 @@ packages:
     resolution: {integrity: sha512-EQ7ORuPp8vFPCqfuGnVo7d36fXS0IFH4/RUlKb1drseix3TQEPcgwEuFADdXBxRgqMp70njz/1m0kdf5lEsm8w==}
     dev: true
 
-  /vite-plugin-electron@0.14.1(vite-plugin-electron-renderer@0.14.5):
-    resolution: {integrity: sha512-QGQ2nJ4wjMf1FaDSkdoC/UskQGiYGcAToATJqJXvqrL4Jmt0CFaZqoDjh1xLicUWEo/X7urHYjhKTqwEeP7F7g==}
+  /vite-plugin-electron@0.28.1(electron@28.1.3)(vite-plugin-electron-renderer@0.14.5):
+    resolution: {integrity: sha512-m2LLcYwUpLx/fQDcdtVqKUMWj7whHoBHvybmuhj+ZHIRawxiyI+9T0YN+TFCaeufNesuny4IyBDRjSOLrTBu5w==}
     peerDependencies:
+      electron: ^28.0.0
+      tree-kill: '*'
       vite-plugin-electron-renderer: '*'
     peerDependenciesMeta:
+      electron:
+        optional: true
+      tree-kill:
+        optional: true
       vite-plugin-electron-renderer:
         optional: true
     dependencies:
+      electron: 28.1.3
       vite-plugin-electron-renderer: 0.14.5
     dev: true
 
