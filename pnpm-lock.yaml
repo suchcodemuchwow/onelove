@@ -232,7 +232,7 @@ importers:
         version: link:../../packages/ui
       '@plasmohq/messaging':
         specifier: ^0.6.0
-        version: 0.6.1(react@18.2.0)
+        version: 0.6.2(react@18.2.0)
       lucide-react:
         specifier: ^0.344.0
         version: 0.344.0(react@18.2.0)
@@ -5841,8 +5841,8 @@ packages:
     resolution: {integrity: sha512-P75g48dqOGneJ+n0AcqnLE/TYflcaPc3B7h6EopnCBBYUDnCNBMwYmKAkaf5pnhsEB0ybPS6TU1C2DTGfqaW7A==}
     dev: false
 
-  /@plasmohq/messaging@0.6.1(react@18.2.0):
-    resolution: {integrity: sha512-/nn1k8SG5z++o/NnZu+byHWcC9MhPLxfmvj+AP3buqMn7uwfYDcYWURLuMW2Knw08HBg+wku2v1Ltt4evN0nzA==}
+  /@plasmohq/messaging@0.6.2(react@18.2.0):
+    resolution: {integrity: sha512-CGfcvfVE0wsN/Y/i/jV0nwjkwh2gBCEujZFhLoxJ12N0ScoP3JVEIvUxJSFsAD4ylBQ8IjD2FyjQozwiSxWc4Q==}
     peerDependencies:
       react: ^16.8.6 || ^17 || ^18
     peerDependenciesMeta:
