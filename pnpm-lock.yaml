@@ -85,7 +85,7 @@ importers:
         version: 10.0.1(@babel/core@7.24.0)
       detox:
         specifier: ^20.18.3
-        version: 20.18.3(jest@29.7.0)
+        version: 20.18.4(jest@29.7.0)
       electron:
         specifier: ^29.1.0
         version: 29.1.0
@@ -3601,7 +3601,7 @@ packages:
       getenv: 1.0.0
       glob: 7.1.6
       resolve-from: 5.0.0
-      semver: 7.6.0
+      semver: 7.5.3
       slash: 3.0.0
       xcode: 3.0.1
       xml2js: 0.6.0
@@ -3624,7 +3624,7 @@ packages:
       getenv: 1.0.0
       glob: 7.1.6
       resolve-from: 5.0.0
-      semver: 7.6.0
+      semver: 7.5.3
       slash: 3.0.0
       xcode: 3.0.1
       xml2js: 0.6.0
@@ -5368,7 +5368,7 @@ packages:
       '@parcel/fs': 2.9.3(@parcel/core@2.9.3)
       '@parcel/utils': 2.9.3
       nullthrows: 1.1.1
-      semver: 7.6.0
+      semver: 7.5.4
     transitivePeerDependencies:
       - '@parcel/core'
     dev: false
@@ -5686,7 +5686,7 @@ packages:
       browserslist: 4.23.0
       json5: 2.2.3
       nullthrows: 1.1.1
-      semver: 7.6.0
+      semver: 7.5.4
     transitivePeerDependencies:
       - '@parcel/core'
     dev: false
@@ -5728,7 +5728,7 @@ packages:
       posthtml: 0.16.6
       posthtml-parser: 0.10.2
       posthtml-render: 3.0.0
-      semver: 7.6.0
+      semver: 7.5.4
       srcset: 4.0.0
     transitivePeerDependencies:
       - '@parcel/core'
@@ -5772,7 +5772,7 @@ packages:
       browserslist: 4.23.0
       nullthrows: 1.1.1
       regenerator-runtime: 0.13.11
-      semver: 7.6.0
+      semver: 7.5.4
     dev: false
 
   /@parcel/transformer-json@2.9.3(@parcel/core@2.9.3):
@@ -5807,7 +5807,7 @@ packages:
       clone: 2.1.2
       nullthrows: 1.1.1
       postcss-value-parser: 4.2.0
-      semver: 7.6.0
+      semver: 7.5.4
     transitivePeerDependencies:
       - '@parcel/core'
     dev: false
@@ -5822,7 +5822,7 @@ packages:
       posthtml: 0.16.6
       posthtml-parser: 0.10.2
       posthtml-render: 3.0.0
-      semver: 7.6.0
+      semver: 7.5.4
     transitivePeerDependencies:
       - '@parcel/core'
     dev: false
@@ -5882,7 +5882,7 @@ packages:
       posthtml: 0.16.6
       posthtml-parser: 0.10.2
       posthtml-render: 3.0.0
-      semver: 7.6.0
+      semver: 7.5.4
     transitivePeerDependencies:
       - '@parcel/core'
     dev: false
@@ -9891,8 +9891,8 @@ packages:
       load-tsconfig: 0.2.5
     dev: true
 
-  /bunyamin@1.5.1(bunyan@2.0.5):
-    resolution: {integrity: sha512-VgWWb3G3HwajZF8fFM8TJjkWOqeDBZgzWBeQb7EhKQTQd33Zri0nghLeg4r86kQqqNlo/p9Jjgwh/O7Q6XpZIg==}
+  /bunyamin@1.5.2(bunyan@2.0.5):
+    resolution: {integrity: sha512-Xp2nfqk33zt3nX90OSTkLVOc5N+1zdR3MWvfLHoIrm3cGRkdxPTPYB9CCgrDV8oum5rbghJjAbmXFXOrRXvMtg==}
     engines: {node: '>=14.18.2'}
     peerDependencies:
       '@types/bunyan': ^1.8.8
@@ -11083,8 +11083,8 @@ packages:
     dev: true
     optional: true
 
-  /detox@20.18.3(jest@29.7.0):
-    resolution: {integrity: sha512-ssC7pWLDOs48Rocu7TDdLaYWiDWF5A8EAf/YcCsseHIqAqr6ECX6Hve8MIh3wUkPGYWoZaJHQfT9cyZjklt8AQ==}
+  /detox@20.18.4(jest@29.7.0):
+    resolution: {integrity: sha512-KWHiaDrc2aRES+gyEzKCSyT/2dI2olAqtsfNHWg1Y3aWyGCW3MVN0js2Ls68lJam/hkFITHJRy58sY9tU4V3TQ==}
     engines: {node: '>=16'}
     hasBin: true
     requiresBuild: true
@@ -11107,7 +11107,7 @@ packages:
       glob: 8.1.0
       ini: 1.3.8
       jest: 29.7.0(@types/node@20.11.24)(ts-node@10.9.2)
-      jest-environment-emit: 1.0.5(jest@29.7.0)
+      jest-environment-emit: 1.0.7(jest@29.7.0)
       json-cycle: 1.5.0
       lodash: 4.17.21
       multi-sort-stream: 1.0.4
@@ -12179,7 +12179,7 @@ packages:
       expo: 49.0.21(@babel/core@7.24.0)
       expo-dev-menu: 3.2.2(expo@49.0.21)
       resolve-from: 5.0.0
-      semver: 7.5.4
+      semver: 7.6.0
     dev: false
 
   /expo-dev-menu-interface@1.3.0(expo@49.0.21):
@@ -12197,7 +12197,7 @@ packages:
     dependencies:
       expo: 49.0.21(@babel/core@7.24.0)
       expo-dev-menu-interface: 1.3.0(expo@49.0.21)
-      semver: 7.5.4
+      semver: 7.6.0
     dev: false
 
   /expo-eas-client@0.6.0:
@@ -14274,8 +14274,8 @@ packages:
       jest-util: 29.7.0
       pretty-format: 29.7.0
 
-  /jest-environment-emit@1.0.5(jest@29.7.0):
-    resolution: {integrity: sha512-OsQ08AhYxkkyDBTIow+9ogNmJheQIGWQKp0Nku+1ToLWjAj2Pd6LmypN8HgUIqYHs4HFcqkQ25kaf1qExmoZpg==}
+  /jest-environment-emit@1.0.7(jest@29.7.0):
+    resolution: {integrity: sha512-/0AYqbL3zrfRTtGyzTZwgRxQZiDXEM8ZUfY7Uscla/XGs9vszx4f0XTSZqAk3CQaiwYAoKvFZkB2vSKm1Q08fQ==}
     engines: {node: '>=16.14.0'}
     peerDependencies:
       '@jest/environment': '>=27.2.5'
@@ -14295,7 +14295,7 @@ packages:
       jest-environment-node:
         optional: true
     dependencies:
-      bunyamin: 1.5.1(bunyan@2.0.5)
+      bunyamin: 1.5.2(bunyan@2.0.5)
       bunyan: 2.0.5
       bunyan-debug-stream: 3.1.0(bunyan@2.0.5)
       funpermaproxy: 1.1.0
@@ -16281,7 +16281,7 @@ packages:
     resolution: {integrity: sha512-p7eGEiQil0YUV3ItH4/tBb781L5impVmmx2E9FRKF7d18XXzp4PGT2tdYMFY6wQqgxD0IwNZOiSJ0/K0fSi/OA==}
     engines: {node: '>=10'}
     dependencies:
-      semver: 7.6.0
+      semver: 7.5.4
     dev: false
 
   /node-abort-controller@3.1.1:
