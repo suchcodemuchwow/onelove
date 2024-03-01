@@ -269,7 +269,7 @@ importers:
         version: 1.40.1
       '@types/node':
         specifier: ^20.3.1
-        version: 20.10.6
+        version: 20.11.24
 
   apps/mobile:
     dependencies:
@@ -9869,12 +9869,6 @@ packages:
 
   /@types/ms@0.7.34:
     resolution: {integrity: sha512-nG96G3Wp6acyAgJqGasjODb+acrI7KltPiRxzHPXnP3NgI28bpQDRv53olbqGXbfcgF5aiiHmO3xpwEpS5Ld9g==}
-    dev: true
-
-  /@types/node@20.10.6:
-    resolution: {integrity: sha512-Vac8H+NlRNNlAmDfGUP7b5h/KA+AtWIzuXy0E6OyP8f1tCLYAtPvKRRDJjAPqhpCb0t6U2j7/xqAuLEebW2kiw==}
-    dependencies:
-      undici-types: 5.26.5
     dev: true
 
   /@types/node@20.11.24:
