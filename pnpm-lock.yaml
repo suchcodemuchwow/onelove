@@ -342,7 +342,7 @@ importers:
         version: 2.1.0
       date-fns:
         specifier: ^3.0.6
-        version: 3.3.1
+        version: 3.4.0
       lucide-react:
         specifier: ^0.344.0
         version: 0.344.0(react@18.2.0)
@@ -351,7 +351,7 @@ importers:
         version: 18.2.0
       react-day-picker:
         specifier: ^8.9.1
-        version: 8.10.0(date-fns@3.3.1)(react@18.2.0)
+        version: 8.10.0(date-fns@3.4.0)(react@18.2.0)
       react-dom:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
@@ -10350,8 +10350,8 @@ packages:
       whatwg-url: 14.0.0
     dev: false
 
-  /date-fns@3.3.1:
-    resolution: {integrity: sha512-y8e109LYGgoQDveiEBD3DYXKba1jWf5BA8YU1FL5Tvm0BTdEfy54WLCwnuYWZNnzzvALy/QQ4Hov+Q9RVRv+Zw==}
+  /date-fns@3.4.0:
+    resolution: {integrity: sha512-Akz4R8J9MXBsOgF1QeWeCsbv6pntT5KCPjU0Q9prBxVmWJYPLhwAIsNg3b0QAdr0ttiozYLD3L/af7Ra0jqYXw==}
     dev: false
 
   /dayjs@1.11.10:
@@ -10909,8 +10909,8 @@ packages:
       tapable: 2.2.1
     dev: true
 
-  /enhanced-resolve@5.15.1:
-    resolution: {integrity: sha512-3d3JRbwsCLJsYgvb6NuWEG44jjPSOMuS73L/6+7BZuoKm3W+qXnSoIYVHi8dG7Qcg4inAY4jbzkZ7MnskePeDg==}
+  /enhanced-resolve@5.16.0:
+    resolution: {integrity: sha512-O+QWCviPNSSLAD9Ucn8Awv+poAkqn3T1XY5/N7kR7rQO9yfSGWkYZDwpJ+iKF7B8rxaQKWngSqACpgzeapSyoA==}
     engines: {node: '>=10.13.0'}
     dependencies:
       graceful-fs: 4.2.11
@@ -16723,13 +16723,13 @@ packages:
       minimist: 1.2.8
       strip-json-comments: 2.0.1
 
-  /react-day-picker@8.10.0(date-fns@3.3.1)(react@18.2.0):
+  /react-day-picker@8.10.0(date-fns@3.4.0)(react@18.2.0):
     resolution: {integrity: sha512-mz+qeyrOM7++1NCb1ARXmkjMkzWVh2GL9YiPbRjKe0zHccvekk4HE+0MPOZOrosn8r8zTHIIeOUXTmXRqmkRmg==}
     peerDependencies:
       date-fns: ^2.28.0 || ^3.0.0
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
     dependencies:
-      date-fns: 3.3.1
+      date-fns: 3.4.0
       react: 18.2.0
     dev: false
 
@@ -19389,7 +19389,7 @@ packages:
       acorn-import-assertions: 1.9.0(acorn@8.11.3)
       browserslist: 4.23.0
       chrome-trace-event: 1.0.3
-      enhanced-resolve: 5.15.1
+      enhanced-resolve: 5.16.0
       es-module-lexer: 1.4.1
       eslint-scope: 5.1.1
       events: 3.3.0
