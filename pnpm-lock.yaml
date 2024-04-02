@@ -85,7 +85,7 @@ importers:
         version: 10.0.1(@babel/core@7.24.3)
       detox:
         specifier: ^20.18.3
-        version: 20.19.5(jest@29.7.0)
+        version: 20.20.0(jest@29.7.0)
       electron:
         specifier: ^29.1.0
         version: 29.1.6
@@ -10197,6 +10197,7 @@ packages:
 
   /brace-expansion@1.1.11:
     resolution: {integrity: sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA==}
+    requiresBuild: true
     dependencies:
       balanced-match: 1.0.2
       concat-map: 0.0.1
@@ -10342,8 +10343,8 @@ packages:
       load-tsconfig: 0.2.5
     dev: true
 
-  /bunyamin@1.5.2(bunyan@2.0.5):
-    resolution: {integrity: sha512-Xp2nfqk33zt3nX90OSTkLVOc5N+1zdR3MWvfLHoIrm3cGRkdxPTPYB9CCgrDV8oum5rbghJjAbmXFXOrRXvMtg==}
+  /bunyamin@1.6.0(bunyan@2.0.5):
+    resolution: {integrity: sha512-MoKfhxRUe7kQUBJz90z44/xckgoYj09Jz9haEsdLrp9MqbW70ee45ifB+r4yKaVCPuMu+5rvh225M3Tk4sb71w==}
     engines: {node: '>=14.18.2'}
     peerDependencies:
       '@types/bunyan': ^1.8.8
@@ -10967,6 +10968,7 @@ packages:
 
   /concat-map@0.0.1:
     resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
+    requiresBuild: true
 
   /concat-stream@1.6.2:
     resolution: {integrity: sha512-27HBghJxjiZtIk3Ycvn/4kbJk/1uZuJFfuPEns6LaEvpvG1f0hTea8lilrouyo9mVc2GWdcEZ8OLoGmSADlrCw==}
@@ -11579,8 +11581,8 @@ packages:
     dev: true
     optional: true
 
-  /detox@20.19.5(jest@29.7.0):
-    resolution: {integrity: sha512-gLNp2rGLMSjrCpY6Xx3drK8jEkhUqrwRCbn27Q5AayFUGHeN7702wU1hLjWEdmJzRCmFUOmOeHR+j+l5N7xEDw==}
+  /detox@20.20.0(jest@29.7.0):
+    resolution: {integrity: sha512-8aiIcNrrjsrWCMGiDB22vGKYHLfDVgwcCMlFmEiJsVbPfhtjDbhGSfSvHqpyf6rb63GEPq/HxCkCy+NBkowXtQ==}
     engines: {node: '>=14'}
     hasBin: true
     requiresBuild: true
@@ -14904,7 +14906,7 @@ packages:
       jest-environment-node:
         optional: true
     dependencies:
-      bunyamin: 1.5.2(bunyan@2.0.5)
+      bunyamin: 1.6.0(bunyan@2.0.5)
       bunyan: 2.0.5
       bunyan-debug-stream: 3.1.0(bunyan@2.0.5)
       funpermaproxy: 1.1.0
