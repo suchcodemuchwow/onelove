@@ -181,7 +181,7 @@ importers:
     dependencies:
       '@nestjs/cache-manager':
         specifier: ^2.2.1
-        version: 2.2.2(@nestjs/common@10.3.7)(@nestjs/core@10.3.7)(cache-manager@5.4.0)(rxjs@7.8.1)
+        version: 2.2.2(@nestjs/common@10.3.7)(@nestjs/core@10.3.7)(cache-manager@5.5.0)(rxjs@7.8.1)
       '@nestjs/common':
         specifier: ^10.3.3
         version: 10.3.7(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.1)(rxjs@7.8.1)
@@ -199,7 +199,7 @@ importers:
         version: 7.3.1(@nestjs/common@10.3.7)(@nestjs/core@10.3.7)(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.1)
       cache-manager:
         specifier: ^5.4.0
-        version: 5.4.0
+        version: 5.5.0
       class-transformer:
         specifier: ^0.5.1
         version: 0.5.1
@@ -4395,7 +4395,7 @@ packages:
     dev: false
     optional: true
 
-  /@nestjs/cache-manager@2.2.2(@nestjs/common@10.3.7)(@nestjs/core@10.3.7)(cache-manager@5.4.0)(rxjs@7.8.1):
+  /@nestjs/cache-manager@2.2.2(@nestjs/common@10.3.7)(@nestjs/core@10.3.7)(cache-manager@5.5.0)(rxjs@7.8.1):
     resolution: {integrity: sha512-+n7rpU1QABeW2WV17Dl1vZCG3vWjJU1MaamWgZvbGxYE9EeCM0lVLfw3z7acgDTNwOy+K68xuQPoIMxD0bhjlA==}
     peerDependencies:
       '@nestjs/common': ^9.0.0 || ^10.0.0
@@ -4405,7 +4405,7 @@ packages:
     dependencies:
       '@nestjs/common': 10.3.7(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.1)(rxjs@7.8.1)
       '@nestjs/core': 10.3.7(@nestjs/common@10.3.7)(@nestjs/platform-express@10.3.7)(reflect-metadata@0.2.1)(rxjs@7.8.1)
-      cache-manager: 5.4.0
+      cache-manager: 5.5.0
       rxjs: 7.8.1
     dev: false
 
@@ -9912,9 +9912,10 @@ packages:
     transitivePeerDependencies:
       - bluebird
 
-  /cache-manager@5.4.0:
-    resolution: {integrity: sha512-FS7o8vqJosnLpu9rh2gQTo8EOzCRJLF1BJ4XDEUDMqcfvs7SJZs5iuoFTXLauzQ3S5v8sBAST1pCwMaurpyi1A==}
+  /cache-manager@5.5.0:
+    resolution: {integrity: sha512-zndX+tczQ7jzlYiXW5++2iCkJicDjNWjHom60gC7B4Epn+Bro8/NZyrTYhBWLT3tbz0UCPv+zf9CkX6fI3yK7A==}
     dependencies:
+      eventemitter3: 5.0.1
       lodash.clonedeep: 4.5.0
       lru-cache: 10.2.0
       promise-coalesce: 1.1.2
@@ -12102,6 +12103,10 @@ packages:
   /event-target-shim@5.0.1:
     resolution: {integrity: sha512-i/2XbnSz/uxRCU6+NdVJgKWDTM427+MqYbkQzD321DuCQJUqOuJKIA0IM2+W2xtYHdKOmZ4dR6fExsd4SXL+WQ==}
     engines: {node: '>=6'}
+    dev: false
+
+  /eventemitter3@5.0.1:
+    resolution: {integrity: sha512-GWkBvjiSZK87ELrYOSESUYeVIc9mvLLf/nXalMOS5dYrgZq9o5OVkbZAVM06CVxYsCwH9BDZFPlQTlPA1j4ahA==}
     dev: false
 
   /events@3.3.0:
