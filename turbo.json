@@ -28,6 +28,18 @@
       ]
     },
     "build:e2e": {},
+    "desktop#dev": {
+      "dependsOn": [
+        "@acme/ui#build"
+      ],
+      "cache": true
+    },
+    "desktop#build:e2e": {
+      "dependsOn": [
+        "@acme/ui#build"
+      ],
+      "cache": true
+    },
     "frontend#dev": {
       "dependsOn": [
         "@acme/ui#build"

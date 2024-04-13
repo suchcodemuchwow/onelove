@@ -27,16 +27,16 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "expo": "^50.0.0",
-    "expo-dev-client": "~3.3.0",
-    "expo-splash-screen": "~0.26.0",
+    "expo": "^50.0.15",
+    "expo-dev-client": "~3.3.11",
+    "expo-splash-screen": "~0.26.4",
     "expo-status-bar": "1.11.1",
-    "expo-updates": "0.24.11",
-    "jest-expo": "^50.0.0",
+    "expo-updates": "0.24.12",
+    "jest-expo": "^50.0.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-native": "0.73.5",
-    "react-native-web": "~0.19.6"
+    "react-native": "0.73.6",
+    "react-native-web": "~0.19.10"
   },
   "eslintConfig": {
     "extends": [
@@ -50,6 +50,6 @@
   },
   "prettier": "@acme/prettier-config",
   "devDependencies": {
-    "@babel/core": "^7.20.0"
+    "@babel/core": "^7.24.4"
   }
 }
