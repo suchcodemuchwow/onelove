@@ -87,8 +87,8 @@ importers:
         specifier: ^20.18.3
         version: 20.20.1(jest@29.7.0)
       electron:
-        specifier: ^29.1.0
-        version: 29.3.0
+        specifier: ^30.0.0
+        version: 30.0.0
       electron-builder:
         specifier: ^24.12.0
         version: 24.13.3(electron-builder-squirrel-windows@24.13.3)
@@ -11502,8 +11502,8 @@ packages:
   /electron-to-chromium@1.4.713:
     resolution: {integrity: sha512-vDarADhwntXiULEdmWd77g2dV6FrNGa8ecAC29MZ4TwPut2fvosD0/5sJd1qWNNe8HcJFAC+F5Lf9jW1NPtWmw==}
 
-  /electron@29.3.0:
-    resolution: {integrity: sha512-ZxFKm0/v48GSoBuO3DdnMlCYXefEUKUHLMsKxyXY4nZGgzbBKpF/X8haZa2paNj23CLfsCKBOtfc2vsEQiOOsA==}
+  /electron@30.0.0:
+    resolution: {integrity: sha512-GRwKphq/TUhSlb44OwSckXKl50f5OR/pm9MvF3rBLyqcxwfu7L11xejrZ0hDea1eKyCkzGd4B+cIqaQiDguPEA==}
     engines: {node: '>= 12.20.55'}
     hasBin: true
     requiresBuild: true
