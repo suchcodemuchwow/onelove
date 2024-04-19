@@ -72,7 +72,7 @@
     "vite-plugin-electron": "^0.28.2",
     "vite-plugin-electron-renderer": "^0.14.5"
   },
-  "packageManager": "pnpm@9.0.0",
+  "packageManager": "pnpm@9.0.4",
   "engines": {
     "node": ">=18"
   },
