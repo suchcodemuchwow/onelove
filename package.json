@@ -27,7 +27,7 @@
     "@nestjs/testing": "^10.3.3",
     "@next/eslint-plugin-next": "^14.1.0",
     "@plasmohq/prettier-plugin-sort-imports": "4.0.1",
-    "@types/chrome": "0.0.266",
+    "@types/chrome": "0.0.270",
     "@types/eslint": "^8.56.5",
     "@types/express": "^4.17.21",
     "@types/jest": "^29.5.12",
