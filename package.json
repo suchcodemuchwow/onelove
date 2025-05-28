@@ -58,7 +58,7 @@
     "source-map-support": "^0.5.21",
     "supertest": "^6.3.4",
     "tailwind-merge": "^2.6.0",
-    "tailwindcss": "^3.4.17",
+    "tailwindcss": "^4.0.0",
     "tailwindcss-animate": "^1.0.7",
     "ts-jest": "^29.3.4",
     "ts-loader": "^9.5.2",
