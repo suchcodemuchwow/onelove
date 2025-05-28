@@ -68,7 +68,7 @@
     "tsx": "^4.19.4",
     "turbo": "^1.13.4",
     "typescript": "5.4.5",
-    "vite": "^5.4.19",
+    "vite": "^6.0.0",
     "vite-plugin-electron": "^0.28.8",
     "vite-plugin-electron-renderer": "^0.14.6"
   },
