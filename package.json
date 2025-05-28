@@ -20,7 +20,7 @@
     "@acme/tsconfig": "workspace:*",
     "@apify/tsconfig": "^0.1.1",
     "@babel/core": "^7.27.3",
-    "@config-plugins/detox": "^7.0.0",
+    "@config-plugins/detox": "^9.0.0",
     "@ianvs/prettier-plugin-sort-imports": "^4.4.1",
     "@nestjs/cli": "^10.4.9",
     "@nestjs/schematics": "^10.2.3",
