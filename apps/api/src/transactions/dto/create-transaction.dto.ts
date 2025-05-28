@@ -10,6 +10,10 @@ export class CreateTransactionDto {
   account_id: string;
 
   @IsNumber()
+  @ApiProperty({
+    required: true,
+    example: 100.50,
+  })
   amount: number;
 }
 
