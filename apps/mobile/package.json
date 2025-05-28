@@ -27,12 +27,12 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "expo": "^50.0.15",
-    "expo-dev-client": "~3.3.11",
+    "expo": "^53.0.0",
+    "expo-dev-client": "~5.1.0",
     "expo-splash-screen": "~0.26.4",
-    "expo-status-bar": "1.11.1",
+    "expo-status-bar": "2.2.3",
     "expo-updates": "0.24.12",
-    "jest-expo": "^50.0.4",
+    "jest-expo": "^53.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-native": "0.73.6",
