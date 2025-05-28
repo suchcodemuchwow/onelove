@@ -52,7 +52,7 @@
     }
   },
   "dependencies": {
-    "@nestjs/cache-manager": "^2.2.1",
+    "@nestjs/cache-manager": "^3.0.0",
     "@nestjs/common": "^10.3.3",
     "@nestjs/config": "^3.2.0",
     "@nestjs/core": "^10.3.3",
