@@ -1,7 +1,7 @@
+import type { NestExpressApplication } from "@nestjs/platform-express";
 import { ValidationPipe } from "@nestjs/common";
 import { ConfigService } from "@nestjs/config";
 import { NestFactory } from "@nestjs/core";
-import type { NestExpressApplication } from "@nestjs/platform-express";
 import { DocumentBuilder, SwaggerModule } from "@nestjs/swagger";
 
 import { AppModule } from "./app.module";
@@ -10,7 +10,10 @@ async function bootstrap() {
   const app = await NestFactory.create<NestExpressApplication>(AppModule);
   const configService = app.get<ConfigService>(ConfigService);
 
-  const apiBaseUrl = configService.get<string>("API_BASE_URL", "http://localhost:3001");
+  const apiBaseUrl = configService.get<string>(
+    "API_BASE_URL",
+    "http://localhost:3001",
+  );
   const apiPort = configService.get<number>("API_PORT", 3001);
   const apiPrefix = configService.get<string>("API_PREFIX", "api");
   const apiDocsPath = configService.get<string>("API_DOCS_PATH", "docs");

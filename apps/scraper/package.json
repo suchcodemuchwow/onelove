@@ -11,7 +11,8 @@
     "lint": "eslint . --max-warnings 0",
     "start": "node build/main.js",
     "test": "echo \"Error: oops, the actor has no tests yet, sad!\"",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "postinstall": "playwright install --with-deps"
   },
   "prettier": "@acme/prettier-config",
   "eslintConfig": {

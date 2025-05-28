@@ -12,7 +12,7 @@ export class CreateTransactionDto {
   @IsNumber()
   @ApiProperty({
     required: true,
-    example: 100.50,
+    example: 100.5,
   })
   amount: number;
 }
