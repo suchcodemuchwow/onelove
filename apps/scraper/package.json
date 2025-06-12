@@ -23,6 +23,6 @@
   },
   "dependencies": {
     "crawlee": "^3.0.0",
-    "playwright": "1.43.1"
+    "playwright": "1.53.0"
   }
 }
