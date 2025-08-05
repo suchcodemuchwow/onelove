@@ -231,8 +231,8 @@ importers:
         specifier: workspace:*
         version: link:../../packages/ui
       '@plasmohq/messaging':
-        specifier: ^0.6.0
-        version: 0.6.2(react@18.2.0)
+        specifier: ^0.7.0
+        version: 0.7.1(react@18.2.0)
       lucide-react:
         specifier: ^0.368.0
         version: 0.368.0(react@18.2.0)
@@ -3098,10 +3098,10 @@ packages:
   '@plasmohq/init@0.7.0':
     resolution: {integrity: sha512-P75g48dqOGneJ+n0AcqnLE/TYflcaPc3B7h6EopnCBBYUDnCNBMwYmKAkaf5pnhsEB0ybPS6TU1C2DTGfqaW7A==}
 
-  '@plasmohq/messaging@0.6.2':
-    resolution: {integrity: sha512-CGfcvfVE0wsN/Y/i/jV0nwjkwh2gBCEujZFhLoxJ12N0ScoP3JVEIvUxJSFsAD4ylBQ8IjD2FyjQozwiSxWc4Q==}
+  '@plasmohq/messaging@0.7.1':
+    resolution: {integrity: sha512-oKTrEO+Qhm/hgUKoiz17dspt2Vwf0O0JN5sUT3WjwEhL6uK7NdSawBl8eELK4qvm7pFSvNcJXiiuHYAvtPKaWg==}
     peerDependencies:
-      react: ^16.8.6 || ^17 || ^18
+      react: ^16.8.6 || ^17 || ^18 || ^19.0.0
     peerDependenciesMeta:
       react:
         optional: true
@@ -15405,7 +15405,7 @@ snapshots:
 
   '@plasmohq/init@0.7.0': {}
 
-  '@plasmohq/messaging@0.6.2(react@18.2.0)':
+  '@plasmohq/messaging@0.7.1(react@18.2.0)':
     dependencies:
       nanoid: 5.0.3
     optionalDependencies:
