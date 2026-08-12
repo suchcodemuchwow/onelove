@@ -42,7 +42,7 @@
     "babel-preset-expo": "10.0.1",
     "detox": "^20.39.0",
     "electron": "^29.4.6",
-    "electron-builder": "^24.13.3",
+    "electron-builder": "^26.0.0",
     "eslint": "8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-config-turbo": "^1.13.4",
