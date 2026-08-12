@@ -39,7 +39,7 @@
     "@typescript-eslint/parser": "^7.18.0",
     "@vitejs/plugin-react": "^4.5.0",
     "autoprefixer": "^10.4.21",
-    "babel-preset-expo": "10.0.1",
+    "babel-preset-expo": "10.0.2",
     "detox": "^20.39.0",
     "electron": "^29.4.6",
     "electron-builder": "^24.13.3",
